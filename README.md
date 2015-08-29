@@ -1,6 +1,6 @@
 # Libevdev
 
-A 1:1 FFI wrapper around [libevdev](http://www.freedesktop.org/software/libevdev/doc/1.4.3/libevdev_8h.html).
+A 1:1 FFI wrapper around [libevdev](http://www.freedesktop.org/software/libevdev/doc/latest/).
 
 ## Installation
 
@@ -24,7 +24,8 @@ Or install it yourself as:
 require 'libevdev'
 ```
 
-All libevdev constants and methods are available under the Libevdev namespace.
+All [libevdev](http://www.freedesktop.org/software/libevdev/doc/latest/libevdev_8h.html)
+constants and methods are available under the Libevdev namespace.
 The `LIBEVDEV_` and `libevdev_` prefixes of the C API have been dropped.
 Besides that, all names were left unchanged.
 
