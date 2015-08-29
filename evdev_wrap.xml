@@ -1,0 +1,2715 @@
+<?xml version="1.0" ?> 
+<top id="1" addr="0x7f206ce2f810" >
+    <attributelist id="2" addr="0x7f206ce2f810" >
+        <attribute name="outfile" value="evdev_wrap.xml" id="3" addr="0x7f206ce5b350" />
+        <attribute name="name" value="libevdev" id="4" addr="0x7f206ce5b350" />
+        <attribute name="module" value="libevdev" id="5" addr="0x7f206ce41d90" />
+        <attribute name="inputfile" value="swig/libevdev.i" id="6" addr="0x7f206ce5b350" />
+        <attribute name="classes" value="0x7f206ce58790" id="7" addr="0x7f206ce58790" />
+        <attribute name="infile" value="swig/libevdev.i" id="8" addr="0x7f206ce5b350" />
+        <attribute name="outfile_h" value="evdev_wrap.h" id="9" addr="0x7f206ce5b350" />
+    </attributelist >
+
+    <include id="10" addr="0x7f206ce3f9f0" >
+        <attributelist id="11" addr="0x7f206ce3f9f0" >
+            <attribute name="name" value="/usr/share/swig/3.0.5/swig.swg" id="12" addr="0x7f206ce5b350" />
+        </attributelist >
+
+        <include id="13" addr="0x7f206ce3fa70" >
+            <attributelist id="14" addr="0x7f206ce3fa70" >
+                <attribute name="name" value="/usr/share/swig/3.0.5/swigwarnings.swg" id="15" addr="0x7f206ce5b350" />
+            </attributelist >
+
+            <include id="16" addr="0x7f206ce3fc30" >
+                <attributelist id="17" addr="0x7f206ce3fc30" >
+                    <attribute name="name" value="/usr/share/swig/3.0.5/swigwarn.swg" id="18" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </include >
+        </include >
+        <typemap id="19" addr="0x7f206ce400b0" >
+            <attributelist id="20" addr="0x7f206ce400b0" >
+                <attribute name="code" value="free($1);" id="21" addr="0x7f206ce5b350" />
+                <attribute name="method" value="newfree" id="22" addr="0x7f206ce5b350" />
+            </attributelist >
+
+            <typemapitem id="23" addr="0x7f206ce3ff70" >
+                <attributelist id="24" addr="0x7f206ce3ff70" >
+                    <parmlist id="25" addr="0x7f206ce3ffb0" >
+                        <parm id="26">
+                            <attributelist id="27" addr="0x7f206ce3ffb0" >
+                                <attribute name="type" value="p.char" id="28" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="29" addr="0x7f206ce402f0" >
+            <attributelist id="30" addr="0x7f206ce402f0" >
+                <attribute name="code" value="{&#10;  free($1);&#10;  if ($input) {&#10;     $1 = ($1_type) malloc(strlen((const char *)$input)+1);&#10;     strcpy((char *)$1, (const char *)$input);&#10;  } else {&#10;     $1 = 0;&#10;  }&#10;}" id="31" addr="0x7f206ce5b350" />
+                <attribute name="method" value="memberin" id="32" addr="0x7f206ce5b350" />
+            </attributelist >
+
+            <typemapitem id="33" addr="0x7f206ce40230" >
+                <attributelist id="34" addr="0x7f206ce40230" >
+                    <parmlist id="35" addr="0x7f206ce40270" >
+                        <parm id="36">
+                            <attributelist id="37" addr="0x7f206ce40270" >
+                                <attribute name="type" value="p.char" id="38" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="39" addr="0x7f206ce40570" >
+            <attributelist id="40" addr="0x7f206ce40570" >
+                <kwargs id="41" addr="0x7f206ce40370" >
+                    <attributelist id="42" addr="0x7f206ce40370" >
+                        <attribute name="name" value="warning" id="43" addr="0x7f206ce5b350" />
+                        <attribute name="value" value="451:Setting a const char * variable may leak memory." id="44" addr="0x7f206ce5b350" />
+                    </attributelist >
+                    <kwargssitem id="45" addr="0x7f206ce40390" >
+                        <attributelist id="46" addr="0x7f206ce40390" >
+                        </attributelist >
+                    </kwargssitem >
+                    <kwargssitem id="47" addr="0x7f206ce403d0" >
+                        <attributelist id="48" addr="0x7f206ce403d0" >
+                        </attributelist >
+                    </kwargssitem >
+                </kwargs >
+                <attribute name="code" value="{&#10;  if ($input) {&#10;     $1 = ($1_type) malloc(strlen((const char *)$input)+1);&#10;     strcpy((char *)$1, (const char *)$input);&#10;  } else {&#10;     $1 = 0;&#10;  }&#10;}" id="49" addr="0x7f206ce5b350" />
+                <attribute name="method" value="memberin" id="50" addr="0x7f206ce5b350" />
+            </attributelist >
+
+            <typemapitem id="51" addr="0x7f206ce404b0" >
+                <attributelist id="52" addr="0x7f206ce404b0" >
+                    <parmlist id="53" addr="0x7f206ce404f0" >
+                        <parm id="54">
+                            <attributelist id="55" addr="0x7f206ce404f0" >
+                                <attribute name="type" value="p.q(const).char" id="56" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="57" addr="0x7f206ce40770" >
+            <attributelist id="58" addr="0x7f206ce40770" >
+                <attribute name="code" value="{&#10;  free($1);&#10;  if ($input) {&#10;     $1 = ($1_type) malloc(strlen((const char *)$input)+1);&#10;     strcpy((char *)$1, (const char *)$input);&#10;  } else {&#10;     $1 = 0;&#10;  }&#10;}" id="59" addr="0x7f206ce5b350" />
+                <attribute name="method" value="globalin" id="60" addr="0x7f206ce5b350" />
+            </attributelist >
+
+            <typemapitem id="61" addr="0x7f206ce406b0" >
+                <attributelist id="62" addr="0x7f206ce406b0" >
+                    <parmlist id="63" addr="0x7f206ce406f0" >
+                        <parm id="64">
+                            <attributelist id="65" addr="0x7f206ce406f0" >
+                                <attribute name="type" value="p.char" id="66" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="67" addr="0x7f206ce409d0" >
+            <attributelist id="68" addr="0x7f206ce409d0" >
+                <kwargs id="69" addr="0x7f206ce407f0" >
+                    <attributelist id="70" addr="0x7f206ce407f0" >
+                        <attribute name="name" value="warning" id="71" addr="0x7f206ce5b350" />
+                        <attribute name="value" value="451:Setting a const char * variable may leak memory." id="72" addr="0x7f206ce5b350" />
+                    </attributelist >
+                    <kwargssitem id="73" addr="0x7f206ce40810" >
+                        <attributelist id="74" addr="0x7f206ce40810" >
+                        </attributelist >
+                    </kwargssitem >
+                    <kwargssitem id="75" addr="0x7f206ce40830" >
+                        <attributelist id="76" addr="0x7f206ce40830" >
+                        </attributelist >
+                    </kwargssitem >
+                </kwargs >
+                <attribute name="code" value="{&#10;  if ($input) {&#10;     $1 = ($1_type) malloc(strlen((const char *)$input)+1);&#10;     strcpy((char *)$1, (const char *)$input);&#10;  } else {&#10;     $1 = 0;&#10;  }&#10;}" id="77" addr="0x7f206ce5b350" />
+                <attribute name="method" value="globalin" id="78" addr="0x7f206ce5b350" />
+            </attributelist >
+
+            <typemapitem id="79" addr="0x7f206ce40910" >
+                <attributelist id="80" addr="0x7f206ce40910" >
+                    <parmlist id="81" addr="0x7f206ce40950" >
+                        <parm id="82">
+                            <attributelist id="83" addr="0x7f206ce40950" >
+                                <attribute name="type" value="p.q(const).char" id="84" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="85" addr="0x7f206ce40c10" >
+            <attributelist id="86" addr="0x7f206ce40c10" >
+                <attribute name="code" value="{&#10;  if($input) {&#10;    strncpy((char*)$1, (const char *)$input, $1_dim0-1);&#10;    $1[$1_dim0-1] = 0;&#10;  } else {&#10;    $1[0] = 0;&#10;  }&#10;}" id="87" addr="0x7f206ce5b350" />
+                <attribute name="method" value="memberin" id="88" addr="0x7f206ce5b350" />
+            </attributelist >
+
+            <typemapitem id="89" addr="0x7f206ce40b50" >
+                <attributelist id="90" addr="0x7f206ce40b50" >
+                    <parmlist id="91" addr="0x7f206ce40b90" >
+                        <parm id="92">
+                            <attributelist id="93" addr="0x7f206ce40b90" >
+                                <attribute name="type" value="a(ANY).char" id="94" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="95" addr="0x7f206ce40e30" >
+            <attributelist id="96" addr="0x7f206ce40e30" >
+                <attribute name="code" value="{&#10;  if($input) {&#10;    strncpy((char*)$1, (const char *)$input, $1_dim0-1);&#10;    $1[$1_dim0-1] = 0;&#10;  } else {&#10;    $1[0] = 0;&#10;  }&#10;}" id="97" addr="0x7f206ce5b350" />
+                <attribute name="method" value="globalin" id="98" addr="0x7f206ce5b350" />
+            </attributelist >
+
+            <typemapitem id="99" addr="0x7f206ce40d70" >
+                <attributelist id="100" addr="0x7f206ce40d70" >
+                    <parmlist id="101" addr="0x7f206ce40db0" >
+                        <parm id="102">
+                            <attributelist id="103" addr="0x7f206ce40db0" >
+                                <attribute name="type" value="a(ANY).char" id="104" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="105" addr="0x7f206ce41010" >
+            <attributelist id="106" addr="0x7f206ce41010" >
+                <attribute name="code" value="{&#10;  if ($input) strcpy((char *)$1, (const char *)$input);&#10;  else $1[0] = 0;&#10;}" id="107" addr="0x7f206ce5b350" />
+                <attribute name="method" value="memberin" id="108" addr="0x7f206ce5b350" />
+            </attributelist >
+
+            <typemapitem id="109" addr="0x7f206ce40f50" >
+                <attributelist id="110" addr="0x7f206ce40f50" >
+                    <parmlist id="111" addr="0x7f206ce40f90" >
+                        <parm id="112">
+                            <attributelist id="113" addr="0x7f206ce40f90" >
+                                <attribute name="type" value="a().char" id="114" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="115" addr="0x7f206ce411f0" >
+            <attributelist id="116" addr="0x7f206ce411f0" >
+                <attribute name="code" value="{&#10;  if ($input) strcpy((char *)$1, (const char *)$input);&#10;  else $1[0] = 0;&#10;}" id="117" addr="0x7f206ce5b350" />
+                <attribute name="method" value="globalin" id="118" addr="0x7f206ce5b350" />
+            </attributelist >
+
+            <typemapitem id="119" addr="0x7f206ce41130" >
+                <attributelist id="120" addr="0x7f206ce41130" >
+                    <parmlist id="121" addr="0x7f206ce41170" >
+                        <parm id="122">
+                            <attributelist id="123" addr="0x7f206ce41170" >
+                                <attribute name="type" value="a().char" id="124" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="125" addr="0x7f206ce41410" >
+            <attributelist id="126" addr="0x7f206ce41410" >
+                <attribute name="code" value="{&#10;  size_t ii;&#10;  $1_basetype *b = ($1_basetype *) $1;&#10;  for (ii = 0; ii &lt; (size_t)$1_size; ii++) b[ii] = *(($1_basetype *) $input + ii);&#10;}" id="127" addr="0x7f206ce5b350" />
+                <attribute name="method" value="memberin" id="128" addr="0x7f206ce5b350" />
+            </attributelist >
+
+            <typemapitem id="129" addr="0x7f206ce41350" >
+                <attributelist id="130" addr="0x7f206ce41350" >
+                    <parmlist id="131" addr="0x7f206ce41390" >
+                        <parm id="132">
+                            <attributelist id="133" addr="0x7f206ce41390" >
+                                <attribute name="type" value="a(ANY).SWIGTYPE" id="134" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="135" addr="0x7f206ce41630" >
+            <attributelist id="136" addr="0x7f206ce41630" >
+                <attribute name="code" value="{&#10;  size_t ii;&#10;  $1_basetype *b = ($1_basetype *) $1;&#10;  for (ii = 0; ii &lt; (size_t)$1_size; ii++) b[ii] = *(($1_basetype *) $input + ii);&#10;}" id="137" addr="0x7f206ce5b350" />
+                <attribute name="method" value="globalin" id="138" addr="0x7f206ce5b350" />
+            </attributelist >
+
+            <typemapitem id="139" addr="0x7f206ce41570" >
+                <attributelist id="140" addr="0x7f206ce41570" >
+                    <parmlist id="141" addr="0x7f206ce415b0" >
+                        <parm id="142">
+                            <attributelist id="143" addr="0x7f206ce415b0" >
+                                <attribute name="type" value="a(ANY).SWIGTYPE" id="144" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="145" addr="0x7f206ce41890" >
+            <attributelist id="146" addr="0x7f206ce41890" >
+                <attribute name="code" value="{&#10;  $basetype (*inp)[$1_dim1] = ($basetype (*)[$1_dim1])($input);&#10;  $basetype (*dest)[$1_dim1] = ($basetype (*)[$1_dim1])($1);&#10;  size_t ii = 0;&#10;  for (; ii &lt; $1_dim0; ++ii) {&#10;    $basetype *ip = inp[ii];&#10;    $basetype *dp = dest[ii];&#10;    size_t jj = 0;&#10;    for (; jj &lt; $1_dim1; ++jj) dp[jj] = ip[jj];&#10;  }&#10;}" id="147" addr="0x7f206ce5b350" />
+                <attribute name="method" value="memberin" id="148" addr="0x7f206ce5b350" />
+            </attributelist >
+
+            <typemapitem id="149" addr="0x7f206ce41770" >
+                <attributelist id="150" addr="0x7f206ce41770" >
+                    <parmlist id="151" addr="0x7f206ce41810" >
+                        <parm id="152">
+                            <attributelist id="153" addr="0x7f206ce41810" >
+                                <attribute name="type" value="a(ANY).a(ANY).SWIGTYPE" id="154" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="155" addr="0x7f206ce41af0" >
+            <attributelist id="156" addr="0x7f206ce41af0" >
+                <attribute name="code" value="{&#10;  $basetype (*inp)[$1_dim1] = ($basetype (*)[$1_dim1])($input);&#10;  $basetype (*dest)[$1_dim1] = ($basetype (*)[$1_dim1])($1);&#10;  size_t ii = 0;&#10;  for (; ii &lt; $1_dim0; ++ii) {&#10;    $basetype *ip = inp[ii];&#10;    $basetype *dp = dest[ii];&#10;    size_t jj = 0;&#10;    for (; jj &lt; $1_dim1; ++jj) dp[jj] = ip[jj];&#10;  }&#10;}" id="157" addr="0x7f206ce5b350" />
+                <attribute name="method" value="globalin" id="158" addr="0x7f206ce5b350" />
+            </attributelist >
+
+            <typemapitem id="159" addr="0x7f206ce419d0" >
+                <attributelist id="160" addr="0x7f206ce419d0" >
+                    <parmlist id="161" addr="0x7f206ce41a70" >
+                        <parm id="162">
+                            <attributelist id="163" addr="0x7f206ce41a70" >
+                                <attribute name="type" value="a(ANY).a(ANY).SWIGTYPE" id="164" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <insert id="165" addr="0x7f206ce41b90" >
+            <attributelist id="166" addr="0x7f206ce41b90" >
+                <attribute name="code" value="/* -----------------------------------------------------------------------------&#10; *  This section contains generic SWIG labels for method/variable&#10; *  declarations/attributes, and other compiler dependent labels.&#10; * ----------------------------------------------------------------------------- */&#10;&#10;/* template workaround for compilers that cannot correctly implement the C++ standard */&#10;#ifndef SWIGTEMPLATEDISAMBIGUATOR&#10;# if defined(__SUNPRO_CC) &amp;&amp; (__SUNPRO_CC &lt;= 0x560)&#10;#  define SWIGTEMPLATEDISAMBIGUATOR template&#10;# elif defined(__HP_aCC)&#10;/* Needed even with `aCC -AA' when `aCC -V' reports HP ANSI C++ B3910B A.03.55 */&#10;/* If we find a maximum version that requires this, the test would be __HP_aCC &lt;= 35500 for A.03.55 */&#10;#  define SWIGTEMPLATEDISAMBIGUATOR template&#10;# else&#10;#  define SWIGTEMPLATEDISAMBIGUATOR&#10;# endif&#10;#endif&#10;&#10;/* inline attribute */&#10;#ifndef SWIGINLINE&#10;# if defined(__cplusplus) || (defined(__GNUC__) &amp;&amp; !defined(__STRICT_ANSI__))&#10;#   define SWIGINLINE inline&#10;# else&#10;#   define SWIGINLINE&#10;# endif&#10;#endif&#10;&#10;/* attribute recognised by some compilers to avoid 'unused' warnings */&#10;#ifndef SWIGUNUSED&#10;# if defined(__GNUC__)&#10;#   if !(defined(__cplusplus)) || (__GNUC__ > 3 || (__GNUC__ == 3 &amp;&amp; __GNUC_MINOR__ >= 4))&#10;#     define SWIGUNUSED __attribute__ ((__unused__))&#10;#   else&#10;#     define SWIGUNUSED&#10;#   endif&#10;# elif defined(__ICC)&#10;#   define SWIGUNUSED __attribute__ ((__unused__))&#10;# else&#10;#   define SWIGUNUSED&#10;# endif&#10;#endif&#10;&#10;#ifndef SWIG_MSC_UNSUPPRESS_4505&#10;# if defined(_MSC_VER)&#10;#   pragma warning(disable : 4505) /* unreferenced local function has been removed */&#10;# endif&#10;#endif&#10;&#10;#ifndef SWIGUNUSEDPARM&#10;# ifdef __cplusplus&#10;#   define SWIGUNUSEDPARM(p)&#10;# else&#10;#   define SWIGUNUSEDPARM(p) p SWIGUNUSED&#10;# endif&#10;#endif&#10;&#10;/* internal SWIG method */&#10;#ifndef SWIGINTERN&#10;# define SWIGINTERN static SWIGUNUSED&#10;#endif&#10;&#10;/* internal inline SWIG method */&#10;#ifndef SWIGINTERNINLINE&#10;# define SWIGINTERNINLINE SWIGINTERN SWIGINLINE&#10;#endif&#10;&#10;/* exporting methods */&#10;#if (__GNUC__ >= 4) || (__GNUC__ == 3 &amp;&amp; __GNUC_MINOR__ >= 4)&#10;#  ifndef GCC_HASCLASSVISIBILITY&#10;#    define GCC_HASCLASSVISIBILITY&#10;#  endif&#10;#endif&#10;&#10;#ifndef SWIGEXPORT&#10;# if defined(_WIN32) || defined(__WIN32__) || defined(__CYGWIN__)&#10;#   if defined(STATIC_LINKED)&#10;#     define SWIGEXPORT&#10;#   else&#10;#     define SWIGEXPORT __declspec(dllexport)&#10;#   endif&#10;# else&#10;#   if defined(__GNUC__) &amp;&amp; defined(GCC_HASCLASSVISIBILITY)&#10;#     define SWIGEXPORT __attribute__ ((visibility(&quot;default&quot;)))&#10;#   else&#10;#     define SWIGEXPORT&#10;#   endif&#10;# endif&#10;#endif&#10;&#10;/* calling conventions for Windows */&#10;#ifndef SWIGSTDCALL&#10;# if defined(_WIN32) || defined(__WIN32__) || defined(__CYGWIN__)&#10;#   define SWIGSTDCALL __stdcall&#10;# else&#10;#   define SWIGSTDCALL&#10;# endif&#10;#endif&#10;&#10;/* Deal with Microsoft's attempt at deprecating C standard runtime functions */&#10;#if !defined(SWIG_NO_CRT_SECURE_NO_DEPRECATE) &amp;&amp; defined(_MSC_VER) &amp;&amp; !defined(_CRT_SECURE_NO_DEPRECATE)&#10;# define _CRT_SECURE_NO_DEPRECATE&#10;#endif&#10;&#10;/* Deal with Microsoft's attempt at deprecating methods in the standard C++ library */&#10;#if !defined(SWIG_NO_SCL_SECURE_NO_DEPRECATE) &amp;&amp; defined(_MSC_VER) &amp;&amp; !defined(_SCL_SECURE_NO_DEPRECATE)&#10;# define _SCL_SECURE_NO_DEPRECATE&#10;#endif&#10;&#10;" id="167" addr="0x7f206ce5b350" />
+                <attribute name="section" value="runtime" id="168" addr="0x7f206ce5b350" />
+            </attributelist >
+         
+        </insert >
+    </include >
+    <include id="169" addr="0x7f206ce41d50" >
+        <attributelist id="170" addr="0x7f206ce41d50" >
+            <attribute name="name" value="swig/libevdev.i" id="171" addr="0x7f206ce5b350" />
+            <attribute name="module" value="" id="172" addr="0x7f206ce41df0" />
+            <attribute name="options" value="0x7f206ce41c90" id="173" addr="0x7f206ce41c90" />
+        </attributelist >
+
+        <module id="174" addr="0x7f206ce41d90" >
+            <attributelist id="175" addr="0x7f206ce41d90" >
+                <attribute name="name" value="libevdev" id="176" addr="0x7f206ce5b350" />
+            </attributelist >
+         
+        </module >
+        <include id="177" addr="0x7f206ce41e50" >
+            <attributelist id="178" addr="0x7f206ce41e50" >
+                <attribute name="name" value="/usr/include/libevdev-1.0/libevdev/libevdev.h" id="179" addr="0x7f206ce5b350" />
+            </attributelist >
+
+            <classforward id="180" addr="0x7f206ce41ef0" >
+                <attributelist id="181" addr="0x7f206ce41ef0" >
+                    <attribute name="sym_name" value="libevdev" id="182" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev" id="183" addr="0x7f206ce5b350" />
+                    <attribute name="kind" value="struct" id="184" addr="0x7f206ce5b350" />
+                    <attribute name="sym_weak" value="1" id="185" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="186" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="187" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </classforward >
+            <enum id="188" addr="0x7f206ce424d0" >
+                <attributelist id="189" addr="0x7f206ce424d0" >
+                    <attribute name="enumkey" value="enum" id="190" addr="0x7f206ce5b350" />
+                    <attribute name="sym_name" value="libevdev_read_flag" id="191" addr="0x7f206ce5b350" />
+                    <attribute name="enumtype" value="enum libevdev_read_flag" id="192" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_read_flag" id="193" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="enum libevdev_read_flag" id="194" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="195" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="196" addr="0x7f206ce5b350" />
+                </attributelist >
+
+                <enumitem id="197" addr="0x7f206ce42110" >
+                    <attributelist id="198" addr="0x7f206ce42110" >
+                        <attribute name="sym_name" value="LIBEVDEV_READ_FLAG_SYNC" id="199" addr="0x7f206ce5b350" />
+                        <attribute name="name" value="LIBEVDEV_READ_FLAG_SYNC" id="200" addr="0x7f206ce5b350" />
+                        <attribute name="enumvalue" value="1" id="201" addr="0x7f206ce5b350" />
+                        <attribute name="feature_immutable" value="1" id="202" addr="0x7f206ce5b350" />
+                        <attribute name="value" value="LIBEVDEV_READ_FLAG_SYNC" id="203" addr="0x7f206ce5b350" />
+                        <attribute name="type" value="int" id="204" addr="0x7f206ce5b350" />
+                        <attribute name="_last" value="0x7f206ce42410" id="205" addr="0x7f206ce42410" />
+                        <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="206" addr="0x7f206ce2e8b0" />
+                        <attribute name="sym_overname" value="__SWIG_0" id="207" addr="0x7f206ce5b350" />
+                        <attribute name="firstenumitem" value="1" id="208" addr="0x7f206ce5b350" />
+                    </attributelist >
+                 
+                </enumitem >
+                <enumitem id="209" addr="0x7f206ce42250" >
+                    <attributelist id="210" addr="0x7f206ce42250" >
+                        <attribute name="sym_name" value="LIBEVDEV_READ_FLAG_NORMAL" id="211" addr="0x7f206ce5b350" />
+                        <attribute name="name" value="LIBEVDEV_READ_FLAG_NORMAL" id="212" addr="0x7f206ce5b350" />
+                        <attribute name="enumvalue" value="2" id="213" addr="0x7f206ce5b350" />
+                        <attribute name="feature_immutable" value="1" id="214" addr="0x7f206ce5b350" />
+                        <attribute name="value" value="LIBEVDEV_READ_FLAG_NORMAL" id="215" addr="0x7f206ce5b350" />
+                        <attribute name="type" value="int" id="216" addr="0x7f206ce5b350" />
+                        <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="217" addr="0x7f206ce2e8b0" />
+                        <attribute name="sym_overname" value="__SWIG_0" id="218" addr="0x7f206ce5b350" />
+                    </attributelist >
+                 
+                </enumitem >
+                <enumitem id="219" addr="0x7f206ce42330" >
+                    <attributelist id="220" addr="0x7f206ce42330" >
+                        <attribute name="sym_name" value="LIBEVDEV_READ_FLAG_FORCE_SYNC" id="221" addr="0x7f206ce5b350" />
+                        <attribute name="name" value="LIBEVDEV_READ_FLAG_FORCE_SYNC" id="222" addr="0x7f206ce5b350" />
+                        <attribute name="enumvalue" value="4" id="223" addr="0x7f206ce5b350" />
+                        <attribute name="feature_immutable" value="1" id="224" addr="0x7f206ce5b350" />
+                        <attribute name="value" value="LIBEVDEV_READ_FLAG_FORCE_SYNC" id="225" addr="0x7f206ce5b350" />
+                        <attribute name="type" value="int" id="226" addr="0x7f206ce5b350" />
+                        <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="227" addr="0x7f206ce2e8b0" />
+                        <attribute name="sym_overname" value="__SWIG_0" id="228" addr="0x7f206ce5b350" />
+                    </attributelist >
+                 
+                </enumitem >
+                <enumitem id="229" addr="0x7f206ce42410" >
+                    <attributelist id="230" addr="0x7f206ce42410" >
+                        <attribute name="sym_name" value="LIBEVDEV_READ_FLAG_BLOCKING" id="231" addr="0x7f206ce5b350" />
+                        <attribute name="name" value="LIBEVDEV_READ_FLAG_BLOCKING" id="232" addr="0x7f206ce5b350" />
+                        <attribute name="enumvalue" value="8" id="233" addr="0x7f206ce5b350" />
+                        <attribute name="feature_immutable" value="1" id="234" addr="0x7f206ce5b350" />
+                        <attribute name="value" value="LIBEVDEV_READ_FLAG_BLOCKING" id="235" addr="0x7f206ce5b350" />
+                        <attribute name="type" value="int" id="236" addr="0x7f206ce5b350" />
+                        <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="237" addr="0x7f206ce2e8b0" />
+                        <attribute name="sym_overname" value="__SWIG_0" id="238" addr="0x7f206ce5b350" />
+                    </attributelist >
+                 
+                </enumitem >
+            </enum >
+            <cdecl id="239" addr="0x7f206ce42830" >
+                <attributelist id="240" addr="0x7f206ce42830" >
+                    <attribute name="sym_name" value="libevdev_new" id="241" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_new" id="242" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(void).p." id="243" addr="0x7f206ce5b350" />
+                    <parmlist id="244" addr="0x7f206ce427d0" >
+                        <parm id="245">
+                            <attributelist id="246" addr="0x7f206ce427d0" >
+                                <attribute name="type" value="void" id="247" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="248" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="249" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="struct libevdev" id="250" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="251" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="252" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="253" addr="0x7f206ce42d30" >
+                <attributelist id="254" addr="0x7f206ce42d30" >
+                    <attribute name="sym_name" value="libevdev_new_from_fd" id="255" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_new_from_fd" id="256" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(int,p.p.struct libevdev)." id="257" addr="0x7f206ce5b350" />
+                    <parmlist id="258" addr="0x7f206ce42b30" >
+                        <parm id="259">
+                            <attributelist id="260" addr="0x7f206ce42b30" >
+                                <attribute name="name" value="fd" id="261" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="int" id="262" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="263" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="264">
+                            <attributelist id="265" addr="0x7f206ce42c70" >
+                                <attribute name="name" value="dev" id="266" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.p.struct libevdev" id="267" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="268" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="269" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="270" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="271" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="272" addr="0x7f206ce43010" >
+                <attributelist id="273" addr="0x7f206ce43010" >
+                    <attribute name="sym_name" value="libevdev_free" id="274" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_free" id="275" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev)." id="276" addr="0x7f206ce5b350" />
+                    <parmlist id="277" addr="0x7f206ce42f50" >
+                        <parm id="278">
+                            <attributelist id="279" addr="0x7f206ce42f50" >
+                                <attribute name="name" value="dev" id="280" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="281" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="282" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="283" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="void" id="284" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="285" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="286" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <enum id="287" addr="0x7f206ce433b0" >
+                <attributelist id="288" addr="0x7f206ce433b0" >
+                    <attribute name="enumkey" value="enum" id="289" addr="0x7f206ce5b350" />
+                    <attribute name="sym_name" value="libevdev_log_priority" id="290" addr="0x7f206ce5b350" />
+                    <attribute name="enumtype" value="enum libevdev_log_priority" id="291" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_log_priority" id="292" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="enum libevdev_log_priority" id="293" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="294" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="295" addr="0x7f206ce5b350" />
+                </attributelist >
+
+                <enumitem id="296" addr="0x7f206ce43130" >
+                    <attributelist id="297" addr="0x7f206ce43130" >
+                        <attribute name="sym_name" value="LIBEVDEV_LOG_ERROR" id="298" addr="0x7f206ce5b350" />
+                        <attribute name="name" value="LIBEVDEV_LOG_ERROR" id="299" addr="0x7f206ce5b350" />
+                        <attribute name="enumvalue" value="10" id="300" addr="0x7f206ce5b350" />
+                        <attribute name="feature_immutable" value="1" id="301" addr="0x7f206ce5b350" />
+                        <attribute name="value" value="LIBEVDEV_LOG_ERROR" id="302" addr="0x7f206ce5b350" />
+                        <attribute name="type" value="int" id="303" addr="0x7f206ce5b350" />
+                        <attribute name="_last" value="0x7f206ce432f0" id="304" addr="0x7f206ce432f0" />
+                        <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="305" addr="0x7f206ce2e8b0" />
+                        <attribute name="sym_overname" value="__SWIG_0" id="306" addr="0x7f206ce5b350" />
+                        <attribute name="firstenumitem" value="1" id="307" addr="0x7f206ce5b350" />
+                    </attributelist >
+                 
+                </enumitem >
+                <enumitem id="308" addr="0x7f206ce43210" >
+                    <attributelist id="309" addr="0x7f206ce43210" >
+                        <attribute name="sym_name" value="LIBEVDEV_LOG_INFO" id="310" addr="0x7f206ce5b350" />
+                        <attribute name="name" value="LIBEVDEV_LOG_INFO" id="311" addr="0x7f206ce5b350" />
+                        <attribute name="enumvalue" value="20" id="312" addr="0x7f206ce5b350" />
+                        <attribute name="feature_immutable" value="1" id="313" addr="0x7f206ce5b350" />
+                        <attribute name="value" value="LIBEVDEV_LOG_INFO" id="314" addr="0x7f206ce5b350" />
+                        <attribute name="type" value="int" id="315" addr="0x7f206ce5b350" />
+                        <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="316" addr="0x7f206ce2e8b0" />
+                        <attribute name="sym_overname" value="__SWIG_0" id="317" addr="0x7f206ce5b350" />
+                    </attributelist >
+                 
+                </enumitem >
+                <enumitem id="318" addr="0x7f206ce432f0" >
+                    <attributelist id="319" addr="0x7f206ce432f0" >
+                        <attribute name="sym_name" value="LIBEVDEV_LOG_DEBUG" id="320" addr="0x7f206ce5b350" />
+                        <attribute name="name" value="LIBEVDEV_LOG_DEBUG" id="321" addr="0x7f206ce5b350" />
+                        <attribute name="enumvalue" value="30" id="322" addr="0x7f206ce5b350" />
+                        <attribute name="feature_immutable" value="1" id="323" addr="0x7f206ce5b350" />
+                        <attribute name="value" value="LIBEVDEV_LOG_DEBUG" id="324" addr="0x7f206ce5b350" />
+                        <attribute name="type" value="int" id="325" addr="0x7f206ce5b350" />
+                        <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="326" addr="0x7f206ce2e8b0" />
+                        <attribute name="sym_overname" value="__SWIG_0" id="327" addr="0x7f206ce5b350" />
+                    </attributelist >
+                 
+                </enumitem >
+            </enum >
+            <cdecl id="328" addr="0x7f206ce43e70" >
+                <attributelist id="329" addr="0x7f206ce43e70" >
+                    <attribute name="sym_name" value="libevdev_log_func_t" id="330" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_log_func_t" id="331" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="p.f(enum libevdev_log_priority,p.void,p.q(const).char,int,p.q(const).char,p.q(const).char,va_list)." id="332" addr="0x7f206ce5b350" />
+                    <parmlist id="333" addr="0x7f206ce436d0" >
+                        <parm id="334">
+                            <attributelist id="335" addr="0x7f206ce436d0" >
+                                <attribute name="name" value="priority" id="336" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="enum libevdev_log_priority" id="337" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="338" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="339">
+                            <attributelist id="340" addr="0x7f206ce437d0" >
+                                <attribute name="name" value="data" id="341" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.void" id="342" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="343">
+                            <attributelist id="344" addr="0x7f206ce43910" >
+                                <attribute name="name" value="file" id="345" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).char" id="346" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="347">
+                            <attributelist id="348" addr="0x7f206ce43a30" >
+                                <attribute name="name" value="line" id="349" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="int" id="350" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="351">
+                            <attributelist id="352" addr="0x7f206ce43b70" >
+                                <attribute name="name" value="func" id="353" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).char" id="354" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="355">
+                            <attributelist id="356" addr="0x7f206ce43cb0" >
+                                <attribute name="name" value="format" id="357" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).char" id="358" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="359">
+                            <attributelist id="360" addr="0x7f206ce43dd0" >
+                                <attribute name="name" value="args" id="361" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="va_list" id="362" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="storage" value="typedef" id="363" addr="0x7f206ce5b350" />
+                    <attribute name="kind" value="typedef" id="364" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="void" id="365" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="366" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="367" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="368" addr="0x7f206ce44250" >
+                <attributelist id="369" addr="0x7f206ce44250" >
+                    <attribute name="sym_name" value="libevdev_set_log_function" id="370" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_set_log_function" id="371" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(libevdev_log_func_t,p.void)." id="372" addr="0x7f206ce5b350" />
+                    <parmlist id="373" addr="0x7f206ce44090" >
+                        <parm id="374">
+                            <attributelist id="375" addr="0x7f206ce44090" >
+                                <attribute name="name" value="logfunc" id="376" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="libevdev_log_func_t" id="377" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="378" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="379">
+                            <attributelist id="380" addr="0x7f206ce44190" >
+                                <attribute name="name" value="data" id="381" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.void" id="382" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="383" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="void" id="384" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="385" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="386" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="387" addr="0x7f206ce44530" >
+                <attributelist id="388" addr="0x7f206ce44530" >
+                    <attribute name="sym_name" value="libevdev_set_log_priority" id="389" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_set_log_priority" id="390" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(enum libevdev_log_priority)." id="391" addr="0x7f206ce5b350" />
+                    <parmlist id="392" addr="0x7f206ce44470" >
+                        <parm id="393">
+                            <attributelist id="394" addr="0x7f206ce44470" >
+                                <attribute name="name" value="priority" id="395" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="enum libevdev_log_priority" id="396" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="397" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="398" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="void" id="399" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="400" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="401" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="402" addr="0x7f206ce44790" >
+                <attributelist id="403" addr="0x7f206ce44790" >
+                    <attribute name="sym_name" value="libevdev_get_log_priority" id="404" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_log_priority" id="405" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(void)." id="406" addr="0x7f206ce5b350" />
+                    <parmlist id="407" addr="0x7f206ce446f0" >
+                        <parm id="408">
+                            <attributelist id="409" addr="0x7f206ce446f0" >
+                                <attribute name="type" value="void" id="410" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="411" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="412" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="enum libevdev_log_priority" id="413" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="414" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="415" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="416" addr="0x7f206ce452f0" >
+                <attributelist id="417" addr="0x7f206ce452f0" >
+                    <attribute name="sym_name" value="libevdev_device_log_func_t" id="418" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_device_log_func_t" id="419" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="p.f(p.q(const).struct libevdev,enum libevdev_log_priority,p.void,p.q(const).char,int,p.q(const).char,p.q(const).char,va_list)." id="420" addr="0x7f206ce5b350" />
+                    <parmlist id="421" addr="0x7f206ce44a10" >
+                        <parm id="422">
+                            <attributelist id="423" addr="0x7f206ce44a10" >
+                                <attribute name="name" value="dev" id="424" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="425" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="426" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="427">
+                            <attributelist id="428" addr="0x7f206ce44b50" >
+                                <attribute name="name" value="priority" id="429" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="enum libevdev_log_priority" id="430" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="431">
+                            <attributelist id="432" addr="0x7f206ce44c50" >
+                                <attribute name="name" value="data" id="433" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.void" id="434" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="435">
+                            <attributelist id="436" addr="0x7f206ce44d90" >
+                                <attribute name="name" value="file" id="437" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).char" id="438" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="439">
+                            <attributelist id="440" addr="0x7f206ce44eb0" >
+                                <attribute name="name" value="line" id="441" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="int" id="442" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="443">
+                            <attributelist id="444" addr="0x7f206ce44ff0" >
+                                <attribute name="name" value="func" id="445" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).char" id="446" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="447">
+                            <attributelist id="448" addr="0x7f206ce45130" >
+                                <attribute name="name" value="format" id="449" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).char" id="450" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="451">
+                            <attributelist id="452" addr="0x7f206ce45250" >
+                                <attribute name="name" value="args" id="453" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="va_list" id="454" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="storage" value="typedef" id="455" addr="0x7f206ce5b350" />
+                    <attribute name="kind" value="typedef" id="456" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="void" id="457" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="458" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="459" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="460" addr="0x7f206ce45950" >
+                <attributelist id="461" addr="0x7f206ce45950" >
+                    <attribute name="sym_name" value="libevdev_set_device_log_function" id="462" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_set_device_log_function" id="463" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,libevdev_device_log_func_t,enum libevdev_log_priority,p.void)." id="464" addr="0x7f206ce5b350" />
+                    <parmlist id="465" addr="0x7f206ce45530" >
+                        <parm id="466">
+                            <attributelist id="467" addr="0x7f206ce45530" >
+                                <attribute name="name" value="dev" id="468" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="469" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="470" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="471">
+                            <attributelist id="472" addr="0x7f206ce45650" >
+                                <attribute name="name" value="logfunc" id="473" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="libevdev_device_log_func_t" id="474" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="475">
+                            <attributelist id="476" addr="0x7f206ce45790" >
+                                <attribute name="name" value="priority" id="477" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="enum libevdev_log_priority" id="478" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="479">
+                            <attributelist id="480" addr="0x7f206ce45890" >
+                                <attribute name="name" value="data" id="481" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.void" id="482" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="483" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="void" id="484" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="485" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="486" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <enum id="487" addr="0x7f206ce45c10" >
+                <attributelist id="488" addr="0x7f206ce45c10" >
+                    <attribute name="enumkey" value="enum" id="489" addr="0x7f206ce5b350" />
+                    <attribute name="sym_name" value="libevdev_grab_mode" id="490" addr="0x7f206ce5b350" />
+                    <attribute name="enumtype" value="enum libevdev_grab_mode" id="491" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_grab_mode" id="492" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="enum libevdev_grab_mode" id="493" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="494" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="495" addr="0x7f206ce5b350" />
+                </attributelist >
+
+                <enumitem id="496" addr="0x7f206ce45a70" >
+                    <attributelist id="497" addr="0x7f206ce45a70" >
+                        <attribute name="sym_name" value="LIBEVDEV_GRAB" id="498" addr="0x7f206ce5b350" />
+                        <attribute name="name" value="LIBEVDEV_GRAB" id="499" addr="0x7f206ce5b350" />
+                        <attribute name="enumvalue" value="3" id="500" addr="0x7f206ce5b350" />
+                        <attribute name="feature_immutable" value="1" id="501" addr="0x7f206ce5b350" />
+                        <attribute name="value" value="LIBEVDEV_GRAB" id="502" addr="0x7f206ce5b350" />
+                        <attribute name="type" value="int" id="503" addr="0x7f206ce5b350" />
+                        <attribute name="_last" value="0x7f206ce45b50" id="504" addr="0x7f206ce45b50" />
+                        <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="505" addr="0x7f206ce2e8b0" />
+                        <attribute name="sym_overname" value="__SWIG_0" id="506" addr="0x7f206ce5b350" />
+                        <attribute name="firstenumitem" value="1" id="507" addr="0x7f206ce5b350" />
+                    </attributelist >
+                 
+                </enumitem >
+                <enumitem id="508" addr="0x7f206ce45b50" >
+                    <attributelist id="509" addr="0x7f206ce45b50" >
+                        <attribute name="sym_name" value="LIBEVDEV_UNGRAB" id="510" addr="0x7f206ce5b350" />
+                        <attribute name="name" value="LIBEVDEV_UNGRAB" id="511" addr="0x7f206ce5b350" />
+                        <attribute name="enumvalue" value="4" id="512" addr="0x7f206ce5b350" />
+                        <attribute name="feature_immutable" value="1" id="513" addr="0x7f206ce5b350" />
+                        <attribute name="value" value="LIBEVDEV_UNGRAB" id="514" addr="0x7f206ce5b350" />
+                        <attribute name="type" value="int" id="515" addr="0x7f206ce5b350" />
+                        <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="516" addr="0x7f206ce2e8b0" />
+                        <attribute name="sym_overname" value="__SWIG_0" id="517" addr="0x7f206ce5b350" />
+                    </attributelist >
+                 
+                </enumitem >
+            </enum >
+            <cdecl id="518" addr="0x7f206ce460d0" >
+                <attributelist id="519" addr="0x7f206ce460d0" >
+                    <attribute name="sym_name" value="libevdev_grab" id="520" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_grab" id="521" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,enum libevdev_grab_mode)." id="522" addr="0x7f206ce5b350" />
+                    <parmlist id="523" addr="0x7f206ce45ed0" >
+                        <parm id="524">
+                            <attributelist id="525" addr="0x7f206ce45ed0" >
+                                <attribute name="name" value="dev" id="526" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="527" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="528" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="529">
+                            <attributelist id="530" addr="0x7f206ce46010" >
+                                <attribute name="name" value="grab" id="531" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="enum libevdev_grab_mode" id="532" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="533" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="534" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="535" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="536" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="537" addr="0x7f206ce464f0" >
+                <attributelist id="538" addr="0x7f206ce464f0" >
+                    <attribute name="sym_name" value="libevdev_set_fd" id="539" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_set_fd" id="540" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,int)." id="541" addr="0x7f206ce5b350" />
+                    <parmlist id="542" addr="0x7f206ce46310" >
+                        <parm id="543">
+                            <attributelist id="544" addr="0x7f206ce46310" >
+                                <attribute name="name" value="dev" id="545" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="546" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="547" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="548">
+                            <attributelist id="549" addr="0x7f206ce46430" >
+                                <attribute name="name" value="fd" id="550" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="int" id="551" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="552" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="553" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="554" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="555" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="556" addr="0x7f206ce46910" >
+                <attributelist id="557" addr="0x7f206ce46910" >
+                    <attribute name="sym_name" value="libevdev_change_fd" id="558" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_change_fd" id="559" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,int)." id="560" addr="0x7f206ce5b350" />
+                    <parmlist id="561" addr="0x7f206ce46730" >
+                        <parm id="562">
+                            <attributelist id="563" addr="0x7f206ce46730" >
+                                <attribute name="name" value="dev" id="564" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="565" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="566" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="567">
+                            <attributelist id="568" addr="0x7f206ce46850" >
+                                <attribute name="name" value="fd" id="569" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="int" id="570" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="571" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="572" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="573" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="574" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="575" addr="0x7f206ce46c30" >
+                <attributelist id="576" addr="0x7f206ce46c30" >
+                    <attribute name="sym_name" value="libevdev_get_fd" id="577" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_fd" id="578" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev)." id="579" addr="0x7f206ce5b350" />
+                    <parmlist id="580" addr="0x7f206ce46b70" >
+                        <parm id="581">
+                            <attributelist id="582" addr="0x7f206ce46b70" >
+                                <attribute name="name" value="dev" id="583" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="584" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="585" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="586" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="587" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="588" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="589" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <enum id="590" addr="0x7f206ce46ef0" >
+                <attributelist id="591" addr="0x7f206ce46ef0" >
+                    <attribute name="enumkey" value="enum" id="592" addr="0x7f206ce5b350" />
+                    <attribute name="sym_name" value="libevdev_read_status" id="593" addr="0x7f206ce5b350" />
+                    <attribute name="enumtype" value="enum libevdev_read_status" id="594" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_read_status" id="595" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="enum libevdev_read_status" id="596" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="597" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="598" addr="0x7f206ce5b350" />
+                </attributelist >
+
+                <enumitem id="599" addr="0x7f206ce46d50" >
+                    <attributelist id="600" addr="0x7f206ce46d50" >
+                        <attribute name="sym_name" value="LIBEVDEV_READ_STATUS_SUCCESS" id="601" addr="0x7f206ce5b350" />
+                        <attribute name="name" value="LIBEVDEV_READ_STATUS_SUCCESS" id="602" addr="0x7f206ce5b350" />
+                        <attribute name="enumvalue" value="0" id="603" addr="0x7f206ce5b350" />
+                        <attribute name="feature_immutable" value="1" id="604" addr="0x7f206ce5b350" />
+                        <attribute name="value" value="LIBEVDEV_READ_STATUS_SUCCESS" id="605" addr="0x7f206ce5b350" />
+                        <attribute name="type" value="int" id="606" addr="0x7f206ce5b350" />
+                        <attribute name="_last" value="0x7f206ce46e30" id="607" addr="0x7f206ce46e30" />
+                        <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="608" addr="0x7f206ce2e8b0" />
+                        <attribute name="sym_overname" value="__SWIG_0" id="609" addr="0x7f206ce5b350" />
+                        <attribute name="firstenumitem" value="1" id="610" addr="0x7f206ce5b350" />
+                    </attributelist >
+                 
+                </enumitem >
+                <enumitem id="611" addr="0x7f206ce46e30" >
+                    <attributelist id="612" addr="0x7f206ce46e30" >
+                        <attribute name="sym_name" value="LIBEVDEV_READ_STATUS_SYNC" id="613" addr="0x7f206ce5b350" />
+                        <attribute name="name" value="LIBEVDEV_READ_STATUS_SYNC" id="614" addr="0x7f206ce5b350" />
+                        <attribute name="enumvalue" value="1" id="615" addr="0x7f206ce5b350" />
+                        <attribute name="feature_immutable" value="1" id="616" addr="0x7f206ce5b350" />
+                        <attribute name="value" value="LIBEVDEV_READ_STATUS_SYNC" id="617" addr="0x7f206ce5b350" />
+                        <attribute name="type" value="int" id="618" addr="0x7f206ce5b350" />
+                        <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="619" addr="0x7f206ce2e8b0" />
+                        <attribute name="sym_overname" value="__SWIG_0" id="620" addr="0x7f206ce5b350" />
+                    </attributelist >
+                 
+                </enumitem >
+            </enum >
+            <cdecl id="621" addr="0x7f206ce474f0" >
+                <attributelist id="622" addr="0x7f206ce474f0" >
+                    <attribute name="sym_name" value="libevdev_next_event" id="623" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_next_event" id="624" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,unsigned int,p.struct input_event)." id="625" addr="0x7f206ce5b350" />
+                    <parmlist id="626" addr="0x7f206ce471b0" >
+                        <parm id="627">
+                            <attributelist id="628" addr="0x7f206ce471b0" >
+                                <attribute name="name" value="dev" id="629" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="630" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="631" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="632">
+                            <attributelist id="633" addr="0x7f206ce472f0" >
+                                <attribute name="name" value="flags" id="634" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="635" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="636">
+                            <attributelist id="637" addr="0x7f206ce47430" >
+                                <attribute name="name" value="ev" id="638" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct input_event" id="639" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="640" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="641" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="642" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="643" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="644" addr="0x7f206ce477f0" >
+                <attributelist id="645" addr="0x7f206ce477f0" >
+                    <attribute name="sym_name" value="libevdev_has_event_pending" id="646" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_has_event_pending" id="647" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev)." id="648" addr="0x7f206ce5b350" />
+                    <parmlist id="649" addr="0x7f206ce47730" >
+                        <parm id="650">
+                            <attributelist id="651" addr="0x7f206ce47730" >
+                                <attribute name="name" value="dev" id="652" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="653" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="654" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="655" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="656" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="657" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="658" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="659" addr="0x7f206ce47b10" >
+                <attributelist id="660" addr="0x7f206ce47b10" >
+                    <attribute name="sym_name" value="libevdev_get_name" id="661" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_name" id="662" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev).p." id="663" addr="0x7f206ce5b350" />
+                    <parmlist id="664" addr="0x7f206ce47a90" >
+                        <parm id="665">
+                            <attributelist id="666" addr="0x7f206ce47a90" >
+                                <attribute name="name" value="dev" id="667" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="668" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="669" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="670" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="q(const).char" id="671" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="672" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="673" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="674" addr="0x7f206ce47f50" >
+                <attributelist id="675" addr="0x7f206ce47f50" >
+                    <attribute name="sym_name" value="libevdev_set_name" id="676" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_set_name" id="677" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,p.q(const).char)." id="678" addr="0x7f206ce5b350" />
+                    <parmlist id="679" addr="0x7f206ce47d50" >
+                        <parm id="680">
+                            <attributelist id="681" addr="0x7f206ce47d50" >
+                                <attribute name="name" value="dev" id="682" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="683" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="684" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="685">
+                            <attributelist id="686" addr="0x7f206ce47e90" >
+                                <attribute name="name" value="name" id="687" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).char" id="688" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="689" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="void" id="690" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="691" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="692" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="693" addr="0x7f206ce48270" >
+                <attributelist id="694" addr="0x7f206ce48270" >
+                    <attribute name="sym_name" value="libevdev_get_phys" id="695" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_phys" id="696" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev).p." id="697" addr="0x7f206ce5b350" />
+                    <parmlist id="698" addr="0x7f206ce481f0" >
+                        <parm id="699">
+                            <attributelist id="700" addr="0x7f206ce481f0" >
+                                <attribute name="name" value="dev" id="701" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="702" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="703" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="704" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="q(const).char" id="705" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="706" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="707" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="708" addr="0x7f206ce486b0" >
+                <attributelist id="709" addr="0x7f206ce486b0" >
+                    <attribute name="sym_name" value="libevdev_set_phys" id="710" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_set_phys" id="711" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,p.q(const).char)." id="712" addr="0x7f206ce5b350" />
+                    <parmlist id="713" addr="0x7f206ce484b0" >
+                        <parm id="714">
+                            <attributelist id="715" addr="0x7f206ce484b0" >
+                                <attribute name="name" value="dev" id="716" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="717" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="718" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="719">
+                            <attributelist id="720" addr="0x7f206ce485f0" >
+                                <attribute name="name" value="phys" id="721" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).char" id="722" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="723" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="void" id="724" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="725" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="726" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="727" addr="0x7f206ce489d0" >
+                <attributelist id="728" addr="0x7f206ce489d0" >
+                    <attribute name="sym_name" value="libevdev_get_uniq" id="729" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_uniq" id="730" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev).p." id="731" addr="0x7f206ce5b350" />
+                    <parmlist id="732" addr="0x7f206ce48950" >
+                        <parm id="733">
+                            <attributelist id="734" addr="0x7f206ce48950" >
+                                <attribute name="name" value="dev" id="735" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="736" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="737" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="738" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="q(const).char" id="739" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="740" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="741" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="742" addr="0x7f206ce48e10" >
+                <attributelist id="743" addr="0x7f206ce48e10" >
+                    <attribute name="sym_name" value="libevdev_set_uniq" id="744" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_set_uniq" id="745" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,p.q(const).char)." id="746" addr="0x7f206ce5b350" />
+                    <parmlist id="747" addr="0x7f206ce48c10" >
+                        <parm id="748">
+                            <attributelist id="749" addr="0x7f206ce48c10" >
+                                <attribute name="name" value="dev" id="750" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="751" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="752" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="753">
+                            <attributelist id="754" addr="0x7f206ce48d50" >
+                                <attribute name="name" value="uniq" id="755" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).char" id="756" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="757" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="void" id="758" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="759" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="760" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="761" addr="0x7f206ce49130" >
+                <attributelist id="762" addr="0x7f206ce49130" >
+                    <attribute name="sym_name" value="libevdev_get_id_product" id="763" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_id_product" id="764" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev)." id="765" addr="0x7f206ce5b350" />
+                    <parmlist id="766" addr="0x7f206ce49070" >
+                        <parm id="767">
+                            <attributelist id="768" addr="0x7f206ce49070" >
+                                <attribute name="name" value="dev" id="769" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="770" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="771" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="772" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="773" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="774" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="775" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="776" addr="0x7f206ce49530" >
+                <attributelist id="777" addr="0x7f206ce49530" >
+                    <attribute name="sym_name" value="libevdev_set_id_product" id="778" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_set_id_product" id="779" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,int)." id="780" addr="0x7f206ce5b350" />
+                    <parmlist id="781" addr="0x7f206ce49350" >
+                        <parm id="782">
+                            <attributelist id="783" addr="0x7f206ce49350" >
+                                <attribute name="name" value="dev" id="784" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="785" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="786" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="787">
+                            <attributelist id="788" addr="0x7f206ce49470" >
+                                <attribute name="name" value="product_id" id="789" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="int" id="790" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="791" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="void" id="792" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="793" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="794" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="795" addr="0x7f206ce49850" >
+                <attributelist id="796" addr="0x7f206ce49850" >
+                    <attribute name="sym_name" value="libevdev_get_id_vendor" id="797" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_id_vendor" id="798" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev)." id="799" addr="0x7f206ce5b350" />
+                    <parmlist id="800" addr="0x7f206ce49790" >
+                        <parm id="801">
+                            <attributelist id="802" addr="0x7f206ce49790" >
+                                <attribute name="name" value="dev" id="803" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="804" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="805" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="806" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="807" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="808" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="809" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="810" addr="0x7f206ce49c50" >
+                <attributelist id="811" addr="0x7f206ce49c50" >
+                    <attribute name="sym_name" value="libevdev_set_id_vendor" id="812" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_set_id_vendor" id="813" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,int)." id="814" addr="0x7f206ce5b350" />
+                    <parmlist id="815" addr="0x7f206ce49a70" >
+                        <parm id="816">
+                            <attributelist id="817" addr="0x7f206ce49a70" >
+                                <attribute name="name" value="dev" id="818" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="819" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="820" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="821">
+                            <attributelist id="822" addr="0x7f206ce49b90" >
+                                <attribute name="name" value="vendor_id" id="823" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="int" id="824" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="825" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="void" id="826" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="827" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="828" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="829" addr="0x7f206ce49f70" >
+                <attributelist id="830" addr="0x7f206ce49f70" >
+                    <attribute name="sym_name" value="libevdev_get_id_bustype" id="831" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_id_bustype" id="832" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev)." id="833" addr="0x7f206ce5b350" />
+                    <parmlist id="834" addr="0x7f206ce49eb0" >
+                        <parm id="835">
+                            <attributelist id="836" addr="0x7f206ce49eb0" >
+                                <attribute name="name" value="dev" id="837" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="838" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="839" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="840" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="841" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="842" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="843" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="844" addr="0x7f206ce4a370" >
+                <attributelist id="845" addr="0x7f206ce4a370" >
+                    <attribute name="sym_name" value="libevdev_set_id_bustype" id="846" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_set_id_bustype" id="847" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,int)." id="848" addr="0x7f206ce5b350" />
+                    <parmlist id="849" addr="0x7f206ce4a190" >
+                        <parm id="850">
+                            <attributelist id="851" addr="0x7f206ce4a190" >
+                                <attribute name="name" value="dev" id="852" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="853" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="854" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="855">
+                            <attributelist id="856" addr="0x7f206ce4a2b0" >
+                                <attribute name="name" value="bustype" id="857" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="int" id="858" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="859" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="void" id="860" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="861" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="862" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="863" addr="0x7f206ce4a690" >
+                <attributelist id="864" addr="0x7f206ce4a690" >
+                    <attribute name="sym_name" value="libevdev_get_id_version" id="865" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_id_version" id="866" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev)." id="867" addr="0x7f206ce5b350" />
+                    <parmlist id="868" addr="0x7f206ce4a5d0" >
+                        <parm id="869">
+                            <attributelist id="870" addr="0x7f206ce4a5d0" >
+                                <attribute name="name" value="dev" id="871" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="872" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="873" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="874" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="875" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="876" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="877" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="878" addr="0x7f206ce4aa90" >
+                <attributelist id="879" addr="0x7f206ce4aa90" >
+                    <attribute name="sym_name" value="libevdev_set_id_version" id="880" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_set_id_version" id="881" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,int)." id="882" addr="0x7f206ce5b350" />
+                    <parmlist id="883" addr="0x7f206ce4a8b0" >
+                        <parm id="884">
+                            <attributelist id="885" addr="0x7f206ce4a8b0" >
+                                <attribute name="name" value="dev" id="886" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="887" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="888" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="889">
+                            <attributelist id="890" addr="0x7f206ce4a9d0" >
+                                <attribute name="name" value="version" id="891" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="int" id="892" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="893" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="void" id="894" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="895" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="896" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="897" addr="0x7f206ce4adb0" >
+                <attributelist id="898" addr="0x7f206ce4adb0" >
+                    <attribute name="sym_name" value="libevdev_get_driver_version" id="899" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_driver_version" id="900" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev)." id="901" addr="0x7f206ce5b350" />
+                    <parmlist id="902" addr="0x7f206ce4acf0" >
+                        <parm id="903">
+                            <attributelist id="904" addr="0x7f206ce4acf0" >
+                                <attribute name="name" value="dev" id="905" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="906" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="907" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="908" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="909" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="910" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="911" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="912" addr="0x7f206ce4b210" >
+                <attributelist id="913" addr="0x7f206ce4b210" >
+                    <attribute name="sym_name" value="libevdev_has_property" id="914" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_has_property" id="915" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev,unsigned int)." id="916" addr="0x7f206ce5b350" />
+                    <parmlist id="917" addr="0x7f206ce4b010" >
+                        <parm id="918">
+                            <attributelist id="919" addr="0x7f206ce4b010" >
+                                <attribute name="name" value="dev" id="920" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="921" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="922" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="923">
+                            <attributelist id="924" addr="0x7f206ce4b150" >
+                                <attribute name="name" value="prop" id="925" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="926" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="927" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="928" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="929" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="930" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="931" addr="0x7f206ce4b650" >
+                <attributelist id="932" addr="0x7f206ce4b650" >
+                    <attribute name="sym_name" value="libevdev_enable_property" id="933" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_enable_property" id="934" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,unsigned int)." id="935" addr="0x7f206ce5b350" />
+                    <parmlist id="936" addr="0x7f206ce4b450" >
+                        <parm id="937">
+                            <attributelist id="938" addr="0x7f206ce4b450" >
+                                <attribute name="name" value="dev" id="939" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="940" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="941" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="942">
+                            <attributelist id="943" addr="0x7f206ce4b590" >
+                                <attribute name="name" value="prop" id="944" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="945" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="946" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="947" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="948" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="949" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="950" addr="0x7f206ce4bab0" >
+                <attributelist id="951" addr="0x7f206ce4bab0" >
+                    <attribute name="sym_name" value="libevdev_has_event_type" id="952" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_has_event_type" id="953" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev,unsigned int)." id="954" addr="0x7f206ce5b350" />
+                    <parmlist id="955" addr="0x7f206ce4b8b0" >
+                        <parm id="956">
+                            <attributelist id="957" addr="0x7f206ce4b8b0" >
+                                <attribute name="name" value="dev" id="958" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="959" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="960" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="961">
+                            <attributelist id="962" addr="0x7f206ce4b9f0" >
+                                <attribute name="name" value="type" id="963" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="964" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="965" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="966" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="967" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="968" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="969" addr="0x7f206ce4c050" >
+                <attributelist id="970" addr="0x7f206ce4c050" >
+                    <attribute name="sym_name" value="libevdev_has_event_code" id="971" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_has_event_code" id="972" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev,unsigned int,unsigned int)." id="973" addr="0x7f206ce5b350" />
+                    <parmlist id="974" addr="0x7f206ce4bd10" >
+                        <parm id="975">
+                            <attributelist id="976" addr="0x7f206ce4bd10" >
+                                <attribute name="name" value="dev" id="977" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="978" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="979" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="980">
+                            <attributelist id="981" addr="0x7f206ce4be50" >
+                                <attribute name="name" value="type" id="982" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="983" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="984">
+                            <attributelist id="985" addr="0x7f206ce4bf90" >
+                                <attribute name="name" value="code" id="986" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="987" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="988" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="989" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="990" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="991" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="992" addr="0x7f206ce4c4b0" >
+                <attributelist id="993" addr="0x7f206ce4c4b0" >
+                    <attribute name="sym_name" value="libevdev_get_abs_minimum" id="994" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_abs_minimum" id="995" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev,unsigned int)." id="996" addr="0x7f206ce5b350" />
+                    <parmlist id="997" addr="0x7f206ce4c2b0" >
+                        <parm id="998">
+                            <attributelist id="999" addr="0x7f206ce4c2b0" >
+                                <attribute name="name" value="dev" id="1000" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="1001" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1002" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1003">
+                            <attributelist id="1004" addr="0x7f206ce4c3f0" >
+                                <attribute name="name" value="code" id="1005" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1006" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1007" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1008" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1009" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1010" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1011" addr="0x7f206ce4c910" >
+                <attributelist id="1012" addr="0x7f206ce4c910" >
+                    <attribute name="sym_name" value="libevdev_get_abs_maximum" id="1013" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_abs_maximum" id="1014" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev,unsigned int)." id="1015" addr="0x7f206ce5b350" />
+                    <parmlist id="1016" addr="0x7f206ce4c710" >
+                        <parm id="1017">
+                            <attributelist id="1018" addr="0x7f206ce4c710" >
+                                <attribute name="name" value="dev" id="1019" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="1020" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1021" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1022">
+                            <attributelist id="1023" addr="0x7f206ce4c850" >
+                                <attribute name="name" value="code" id="1024" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1025" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1026" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1027" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1028" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1029" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1030" addr="0x7f206ce4cd70" >
+                <attributelist id="1031" addr="0x7f206ce4cd70" >
+                    <attribute name="sym_name" value="libevdev_get_abs_fuzz" id="1032" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_abs_fuzz" id="1033" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev,unsigned int)." id="1034" addr="0x7f206ce5b350" />
+                    <parmlist id="1035" addr="0x7f206ce4cb70" >
+                        <parm id="1036">
+                            <attributelist id="1037" addr="0x7f206ce4cb70" >
+                                <attribute name="name" value="dev" id="1038" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="1039" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1040" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1041">
+                            <attributelist id="1042" addr="0x7f206ce4ccb0" >
+                                <attribute name="name" value="code" id="1043" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1044" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1045" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1046" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1047" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1048" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1049" addr="0x7f206ce4d1d0" >
+                <attributelist id="1050" addr="0x7f206ce4d1d0" >
+                    <attribute name="sym_name" value="libevdev_get_abs_flat" id="1051" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_abs_flat" id="1052" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev,unsigned int)." id="1053" addr="0x7f206ce5b350" />
+                    <parmlist id="1054" addr="0x7f206ce4cfd0" >
+                        <parm id="1055">
+                            <attributelist id="1056" addr="0x7f206ce4cfd0" >
+                                <attribute name="name" value="dev" id="1057" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="1058" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1059" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1060">
+                            <attributelist id="1061" addr="0x7f206ce4d110" >
+                                <attribute name="name" value="code" id="1062" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1063" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1064" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1065" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1066" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1067" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1068" addr="0x7f206ce4d630" >
+                <attributelist id="1069" addr="0x7f206ce4d630" >
+                    <attribute name="sym_name" value="libevdev_get_abs_resolution" id="1070" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_abs_resolution" id="1071" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev,unsigned int)." id="1072" addr="0x7f206ce5b350" />
+                    <parmlist id="1073" addr="0x7f206ce4d430" >
+                        <parm id="1074">
+                            <attributelist id="1075" addr="0x7f206ce4d430" >
+                                <attribute name="name" value="dev" id="1076" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="1077" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1078" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1079">
+                            <attributelist id="1080" addr="0x7f206ce4d570" >
+                                <attribute name="name" value="code" id="1081" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1082" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1083" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1084" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1085" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1086" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1087" addr="0x7f206ce4dab0" >
+                <attributelist id="1088" addr="0x7f206ce4dab0" >
+                    <attribute name="sym_name" value="libevdev_get_abs_info" id="1089" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_abs_info" id="1090" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev,unsigned int).p." id="1091" addr="0x7f206ce5b350" />
+                    <parmlist id="1092" addr="0x7f206ce4d8f0" >
+                        <parm id="1093">
+                            <attributelist id="1094" addr="0x7f206ce4d8f0" >
+                                <attribute name="name" value="dev" id="1095" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="1096" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1097" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1098">
+                            <attributelist id="1099" addr="0x7f206ce4da30" >
+                                <attribute name="name" value="code" id="1100" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1101" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1102" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="q(const).struct input_absinfo" id="1103" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1104" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1105" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1106" addr="0x7f206ce4e070" >
+                <attributelist id="1107" addr="0x7f206ce4e070" >
+                    <attribute name="sym_name" value="libevdev_get_event_value" id="1108" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_event_value" id="1109" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev,unsigned int,unsigned int)." id="1110" addr="0x7f206ce5b350" />
+                    <parmlist id="1111" addr="0x7f206ce4dd30" >
+                        <parm id="1112">
+                            <attributelist id="1113" addr="0x7f206ce4dd30" >
+                                <attribute name="name" value="dev" id="1114" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="1115" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1116" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1117">
+                            <attributelist id="1118" addr="0x7f206ce4de70" >
+                                <attribute name="name" value="type" id="1119" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1120" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1121">
+                            <attributelist id="1122" addr="0x7f206ce4dfb0" >
+                                <attribute name="name" value="code" id="1123" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1124" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1125" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1126" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1127" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1128" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1129" addr="0x7f206ce4e710" >
+                <attributelist id="1130" addr="0x7f206ce4e710" >
+                    <attribute name="sym_name" value="libevdev_set_event_value" id="1131" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_set_event_value" id="1132" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,unsigned int,unsigned int,int)." id="1133" addr="0x7f206ce5b350" />
+                    <parmlist id="1134" addr="0x7f206ce4e2b0" >
+                        <parm id="1135">
+                            <attributelist id="1136" addr="0x7f206ce4e2b0" >
+                                <attribute name="name" value="dev" id="1137" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="1138" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1139" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1140">
+                            <attributelist id="1141" addr="0x7f206ce4e3f0" >
+                                <attribute name="name" value="type" id="1142" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1143" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1144">
+                            <attributelist id="1145" addr="0x7f206ce4e530" >
+                                <attribute name="name" value="code" id="1146" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1147" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1148">
+                            <attributelist id="1149" addr="0x7f206ce4e650" >
+                                <attribute name="name" value="value" id="1150" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="int" id="1151" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1152" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1153" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1154" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1155" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1156" addr="0x7f206ce4edd0" >
+                <attributelist id="1157" addr="0x7f206ce4edd0" >
+                    <attribute name="sym_name" value="libevdev_fetch_event_value" id="1158" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_fetch_event_value" id="1159" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev,unsigned int,unsigned int,p.int)." id="1160" addr="0x7f206ce5b350" />
+                    <parmlist id="1161" addr="0x7f206ce4e970" >
+                        <parm id="1162">
+                            <attributelist id="1163" addr="0x7f206ce4e970" >
+                                <attribute name="name" value="dev" id="1164" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="1165" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1166" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1167">
+                            <attributelist id="1168" addr="0x7f206ce4eab0" >
+                                <attribute name="name" value="type" id="1169" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1170" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1171">
+                            <attributelist id="1172" addr="0x7f206ce4ebf0" >
+                                <attribute name="name" value="code" id="1173" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1174" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1175">
+                            <attributelist id="1176" addr="0x7f206ce4ed10" >
+                                <attribute name="name" value="value" id="1177" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.int" id="1178" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1179" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1180" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1181" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1182" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1183" addr="0x7f206ce4f370" >
+                <attributelist id="1184" addr="0x7f206ce4f370" >
+                    <attribute name="sym_name" value="libevdev_get_slot_value" id="1185" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_slot_value" id="1186" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev,unsigned int,unsigned int)." id="1187" addr="0x7f206ce5b350" />
+                    <parmlist id="1188" addr="0x7f206ce4f030" >
+                        <parm id="1189">
+                            <attributelist id="1190" addr="0x7f206ce4f030" >
+                                <attribute name="name" value="dev" id="1191" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="1192" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1193" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1194">
+                            <attributelist id="1195" addr="0x7f206ce4f170" >
+                                <attribute name="name" value="slot" id="1196" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1197" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1198">
+                            <attributelist id="1199" addr="0x7f206ce4f2b0" >
+                                <attribute name="name" value="code" id="1200" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1201" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1202" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1203" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1204" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1205" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1206" addr="0x7f206ce4fa10" >
+                <attributelist id="1207" addr="0x7f206ce4fa10" >
+                    <attribute name="sym_name" value="libevdev_set_slot_value" id="1208" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_set_slot_value" id="1209" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,unsigned int,unsigned int,int)." id="1210" addr="0x7f206ce5b350" />
+                    <parmlist id="1211" addr="0x7f206ce4f5b0" >
+                        <parm id="1212">
+                            <attributelist id="1213" addr="0x7f206ce4f5b0" >
+                                <attribute name="name" value="dev" id="1214" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="1215" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1216" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1217">
+                            <attributelist id="1218" addr="0x7f206ce4f6f0" >
+                                <attribute name="name" value="slot" id="1219" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1220" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1221">
+                            <attributelist id="1222" addr="0x7f206ce4f830" >
+                                <attribute name="name" value="code" id="1223" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1224" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1225">
+                            <attributelist id="1226" addr="0x7f206ce4f950" >
+                                <attribute name="name" value="value" id="1227" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="int" id="1228" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1229" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1230" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1231" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1232" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1233" addr="0x7f206ce500d0" >
+                <attributelist id="1234" addr="0x7f206ce500d0" >
+                    <attribute name="sym_name" value="libevdev_fetch_slot_value" id="1235" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_fetch_slot_value" id="1236" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev,unsigned int,unsigned int,p.int)." id="1237" addr="0x7f206ce5b350" />
+                    <parmlist id="1238" addr="0x7f206ce4fc70" >
+                        <parm id="1239">
+                            <attributelist id="1240" addr="0x7f206ce4fc70" >
+                                <attribute name="name" value="dev" id="1241" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="1242" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1243" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1244">
+                            <attributelist id="1245" addr="0x7f206ce4fdb0" >
+                                <attribute name="name" value="slot" id="1246" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1247" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1248">
+                            <attributelist id="1249" addr="0x7f206ce4fef0" >
+                                <attribute name="name" value="code" id="1250" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1251" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1252">
+                            <attributelist id="1253" addr="0x7f206ce50010" >
+                                <attribute name="name" value="value" id="1254" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.int" id="1255" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1256" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1257" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1258" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1259" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1260" addr="0x7f206ce503f0" >
+                <attributelist id="1261" addr="0x7f206ce503f0" >
+                    <attribute name="sym_name" value="libevdev_get_num_slots" id="1262" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_num_slots" id="1263" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev)." id="1264" addr="0x7f206ce5b350" />
+                    <parmlist id="1265" addr="0x7f206ce50330" >
+                        <parm id="1266">
+                            <attributelist id="1267" addr="0x7f206ce50330" >
+                                <attribute name="name" value="dev" id="1268" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="1269" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1270" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1271" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1272" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1273" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1274" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1275" addr="0x7f206ce50710" >
+                <attributelist id="1276" addr="0x7f206ce50710" >
+                    <attribute name="sym_name" value="libevdev_get_current_slot" id="1277" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_current_slot" id="1278" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev)." id="1279" addr="0x7f206ce5b350" />
+                    <parmlist id="1280" addr="0x7f206ce50650" >
+                        <parm id="1281">
+                            <attributelist id="1282" addr="0x7f206ce50650" >
+                                <attribute name="name" value="dev" id="1283" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="1284" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1285" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1286" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1287" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1288" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1289" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1290" addr="0x7f206ce50c50" >
+                <attributelist id="1291" addr="0x7f206ce50c50" >
+                    <attribute name="sym_name" value="libevdev_set_abs_minimum" id="1292" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_set_abs_minimum" id="1293" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,unsigned int,int)." id="1294" addr="0x7f206ce5b350" />
+                    <parmlist id="1295" addr="0x7f206ce50930" >
+                        <parm id="1296">
+                            <attributelist id="1297" addr="0x7f206ce50930" >
+                                <attribute name="name" value="dev" id="1298" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="1299" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1300" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1301">
+                            <attributelist id="1302" addr="0x7f206ce50a70" >
+                                <attribute name="name" value="code" id="1303" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1304" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1305">
+                            <attributelist id="1306" addr="0x7f206ce50b90" >
+                                <attribute name="name" value="min" id="1307" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="int" id="1308" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1309" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="void" id="1310" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1311" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1312" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1313" addr="0x7f206ce51190" >
+                <attributelist id="1314" addr="0x7f206ce51190" >
+                    <attribute name="sym_name" value="libevdev_set_abs_maximum" id="1315" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_set_abs_maximum" id="1316" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,unsigned int,int)." id="1317" addr="0x7f206ce5b350" />
+                    <parmlist id="1318" addr="0x7f206ce50e70" >
+                        <parm id="1319">
+                            <attributelist id="1320" addr="0x7f206ce50e70" >
+                                <attribute name="name" value="dev" id="1321" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="1322" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1323" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1324">
+                            <attributelist id="1325" addr="0x7f206ce50fb0" >
+                                <attribute name="name" value="code" id="1326" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1327" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1328">
+                            <attributelist id="1329" addr="0x7f206ce510d0" >
+                                <attribute name="name" value="max" id="1330" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="int" id="1331" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1332" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="void" id="1333" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1334" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1335" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1336" addr="0x7f206ce516d0" >
+                <attributelist id="1337" addr="0x7f206ce516d0" >
+                    <attribute name="sym_name" value="libevdev_set_abs_fuzz" id="1338" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_set_abs_fuzz" id="1339" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,unsigned int,int)." id="1340" addr="0x7f206ce5b350" />
+                    <parmlist id="1341" addr="0x7f206ce513b0" >
+                        <parm id="1342">
+                            <attributelist id="1343" addr="0x7f206ce513b0" >
+                                <attribute name="name" value="dev" id="1344" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="1345" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1346" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1347">
+                            <attributelist id="1348" addr="0x7f206ce514f0" >
+                                <attribute name="name" value="code" id="1349" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1350" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1351">
+                            <attributelist id="1352" addr="0x7f206ce51610" >
+                                <attribute name="name" value="fuzz" id="1353" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="int" id="1354" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1355" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="void" id="1356" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1357" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1358" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1359" addr="0x7f206ce51c10" >
+                <attributelist id="1360" addr="0x7f206ce51c10" >
+                    <attribute name="sym_name" value="libevdev_set_abs_flat" id="1361" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_set_abs_flat" id="1362" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,unsigned int,int)." id="1363" addr="0x7f206ce5b350" />
+                    <parmlist id="1364" addr="0x7f206ce518f0" >
+                        <parm id="1365">
+                            <attributelist id="1366" addr="0x7f206ce518f0" >
+                                <attribute name="name" value="dev" id="1367" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="1368" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1369" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1370">
+                            <attributelist id="1371" addr="0x7f206ce51a30" >
+                                <attribute name="name" value="code" id="1372" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1373" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1374">
+                            <attributelist id="1375" addr="0x7f206ce51b50" >
+                                <attribute name="name" value="flat" id="1376" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="int" id="1377" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1378" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="void" id="1379" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1380" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1381" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1382" addr="0x7f206ce52150" >
+                <attributelist id="1383" addr="0x7f206ce52150" >
+                    <attribute name="sym_name" value="libevdev_set_abs_resolution" id="1384" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_set_abs_resolution" id="1385" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,unsigned int,int)." id="1386" addr="0x7f206ce5b350" />
+                    <parmlist id="1387" addr="0x7f206ce51e30" >
+                        <parm id="1388">
+                            <attributelist id="1389" addr="0x7f206ce51e30" >
+                                <attribute name="name" value="dev" id="1390" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="1391" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1392" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1393">
+                            <attributelist id="1394" addr="0x7f206ce51f70" >
+                                <attribute name="name" value="code" id="1395" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1396" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1397">
+                            <attributelist id="1398" addr="0x7f206ce52090" >
+                                <attribute name="name" value="resolution" id="1399" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="int" id="1400" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1401" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="void" id="1402" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1403" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1404" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1405" addr="0x7f206ce526d0" >
+                <attributelist id="1406" addr="0x7f206ce526d0" >
+                    <attribute name="sym_name" value="libevdev_set_abs_info" id="1407" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_set_abs_info" id="1408" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,unsigned int,p.q(const).struct input_absinfo)." id="1409" addr="0x7f206ce5b350" />
+                    <parmlist id="1410" addr="0x7f206ce52370" >
+                        <parm id="1411">
+                            <attributelist id="1412" addr="0x7f206ce52370" >
+                                <attribute name="name" value="dev" id="1413" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="1414" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1415" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1416">
+                            <attributelist id="1417" addr="0x7f206ce524b0" >
+                                <attribute name="name" value="code" id="1418" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1419" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1420">
+                            <attributelist id="1421" addr="0x7f206ce52610" >
+                                <attribute name="name" value="abs" id="1422" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct input_absinfo" id="1423" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1424" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="void" id="1425" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1426" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1427" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1428" addr="0x7f206ce52b10" >
+                <attributelist id="1429" addr="0x7f206ce52b10" >
+                    <attribute name="sym_name" value="libevdev_enable_event_type" id="1430" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_enable_event_type" id="1431" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,unsigned int)." id="1432" addr="0x7f206ce5b350" />
+                    <parmlist id="1433" addr="0x7f206ce52910" >
+                        <parm id="1434">
+                            <attributelist id="1435" addr="0x7f206ce52910" >
+                                <attribute name="name" value="dev" id="1436" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="1437" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1438" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1439">
+                            <attributelist id="1440" addr="0x7f206ce52a50" >
+                                <attribute name="name" value="type" id="1441" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1442" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1443" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1444" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1445" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1446" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1447" addr="0x7f206ce52f50" >
+                <attributelist id="1448" addr="0x7f206ce52f50" >
+                    <attribute name="sym_name" value="libevdev_disable_event_type" id="1449" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_disable_event_type" id="1450" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,unsigned int)." id="1451" addr="0x7f206ce5b350" />
+                    <parmlist id="1452" addr="0x7f206ce52d50" >
+                        <parm id="1453">
+                            <attributelist id="1454" addr="0x7f206ce52d50" >
+                                <attribute name="name" value="dev" id="1455" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="1456" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1457" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1458">
+                            <attributelist id="1459" addr="0x7f206ce52e90" >
+                                <attribute name="name" value="type" id="1460" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1461" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1462" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1463" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1464" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1465" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1466" addr="0x7f206ce535f0" >
+                <attributelist id="1467" addr="0x7f206ce535f0" >
+                    <attribute name="sym_name" value="libevdev_enable_event_code" id="1468" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_enable_event_code" id="1469" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,unsigned int,unsigned int,p.q(const).void)." id="1470" addr="0x7f206ce5b350" />
+                    <parmlist id="1471" addr="0x7f206ce53190" >
+                        <parm id="1472">
+                            <attributelist id="1473" addr="0x7f206ce53190" >
+                                <attribute name="name" value="dev" id="1474" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="1475" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1476" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1477">
+                            <attributelist id="1478" addr="0x7f206ce532d0" >
+                                <attribute name="name" value="type" id="1479" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1480" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1481">
+                            <attributelist id="1482" addr="0x7f206ce53410" >
+                                <attribute name="name" value="code" id="1483" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1484" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1485">
+                            <attributelist id="1486" addr="0x7f206ce53530" >
+                                <attribute name="name" value="data" id="1487" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).void" id="1488" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1489" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1490" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1491" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1492" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1493" addr="0x7f206ce53b70" >
+                <attributelist id="1494" addr="0x7f206ce53b70" >
+                    <attribute name="sym_name" value="libevdev_disable_event_code" id="1495" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_disable_event_code" id="1496" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,unsigned int,unsigned int)." id="1497" addr="0x7f206ce5b350" />
+                    <parmlist id="1498" addr="0x7f206ce53830" >
+                        <parm id="1499">
+                            <attributelist id="1500" addr="0x7f206ce53830" >
+                                <attribute name="name" value="dev" id="1501" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="1502" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1503" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1504">
+                            <attributelist id="1505" addr="0x7f206ce53970" >
+                                <attribute name="name" value="type" id="1506" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1507" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1508">
+                            <attributelist id="1509" addr="0x7f206ce53ab0" >
+                                <attribute name="name" value="code" id="1510" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1511" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1512" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1513" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1514" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1515" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1516" addr="0x7f206ce54110" >
+                <attributelist id="1517" addr="0x7f206ce54110" >
+                    <attribute name="sym_name" value="libevdev_kernel_set_abs_info" id="1518" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_kernel_set_abs_info" id="1519" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,unsigned int,p.q(const).struct input_absinfo)." id="1520" addr="0x7f206ce5b350" />
+                    <parmlist id="1521" addr="0x7f206ce53db0" >
+                        <parm id="1522">
+                            <attributelist id="1523" addr="0x7f206ce53db0" >
+                                <attribute name="name" value="dev" id="1524" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="1525" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1526" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1527">
+                            <attributelist id="1528" addr="0x7f206ce53ef0" >
+                                <attribute name="name" value="code" id="1529" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1530" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1531">
+                            <attributelist id="1532" addr="0x7f206ce54050" >
+                                <attribute name="name" value="abs" id="1533" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct input_absinfo" id="1534" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1535" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1536" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1537" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1538" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <enum id="1539" addr="0x7f206ce543d0" >
+                <attributelist id="1540" addr="0x7f206ce543d0" >
+                    <attribute name="enumkey" value="enum" id="1541" addr="0x7f206ce5b350" />
+                    <attribute name="sym_name" value="libevdev_led_value" id="1542" addr="0x7f206ce5b350" />
+                    <attribute name="enumtype" value="enum libevdev_led_value" id="1543" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_led_value" id="1544" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="enum libevdev_led_value" id="1545" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1546" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1547" addr="0x7f206ce5b350" />
+                </attributelist >
+
+                <enumitem id="1548" addr="0x7f206ce54230" >
+                    <attributelist id="1549" addr="0x7f206ce54230" >
+                        <attribute name="sym_name" value="LIBEVDEV_LED_ON" id="1550" addr="0x7f206ce5b350" />
+                        <attribute name="name" value="LIBEVDEV_LED_ON" id="1551" addr="0x7f206ce5b350" />
+                        <attribute name="enumvalue" value="3" id="1552" addr="0x7f206ce5b350" />
+                        <attribute name="feature_immutable" value="1" id="1553" addr="0x7f206ce5b350" />
+                        <attribute name="value" value="LIBEVDEV_LED_ON" id="1554" addr="0x7f206ce5b350" />
+                        <attribute name="type" value="int" id="1555" addr="0x7f206ce5b350" />
+                        <attribute name="_last" value="0x7f206ce54310" id="1556" addr="0x7f206ce54310" />
+                        <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1557" addr="0x7f206ce2e8b0" />
+                        <attribute name="sym_overname" value="__SWIG_0" id="1558" addr="0x7f206ce5b350" />
+                        <attribute name="firstenumitem" value="1" id="1559" addr="0x7f206ce5b350" />
+                    </attributelist >
+                 
+                </enumitem >
+                <enumitem id="1560" addr="0x7f206ce54310" >
+                    <attributelist id="1561" addr="0x7f206ce54310" >
+                        <attribute name="sym_name" value="LIBEVDEV_LED_OFF" id="1562" addr="0x7f206ce5b350" />
+                        <attribute name="name" value="LIBEVDEV_LED_OFF" id="1563" addr="0x7f206ce5b350" />
+                        <attribute name="enumvalue" value="4" id="1564" addr="0x7f206ce5b350" />
+                        <attribute name="feature_immutable" value="1" id="1565" addr="0x7f206ce5b350" />
+                        <attribute name="value" value="LIBEVDEV_LED_OFF" id="1566" addr="0x7f206ce5b350" />
+                        <attribute name="type" value="int" id="1567" addr="0x7f206ce5b350" />
+                        <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1568" addr="0x7f206ce2e8b0" />
+                        <attribute name="sym_overname" value="__SWIG_0" id="1569" addr="0x7f206ce5b350" />
+                    </attributelist >
+                 
+                </enumitem >
+            </enum >
+            <cdecl id="1570" addr="0x7f206ce549d0" >
+                <attributelist id="1571" addr="0x7f206ce549d0" >
+                    <attribute name="sym_name" value="libevdev_kernel_set_led_value" id="1572" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_kernel_set_led_value" id="1573" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,unsigned int,enum libevdev_led_value)." id="1574" addr="0x7f206ce5b350" />
+                    <parmlist id="1575" addr="0x7f206ce54690" >
+                        <parm id="1576">
+                            <attributelist id="1577" addr="0x7f206ce54690" >
+                                <attribute name="name" value="dev" id="1578" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="1579" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1580" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1581">
+                            <attributelist id="1582" addr="0x7f206ce547d0" >
+                                <attribute name="name" value="code" id="1583" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1584" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1585">
+                            <attributelist id="1586" addr="0x7f206ce54910" >
+                                <attribute name="name" value="value" id="1587" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="enum libevdev_led_value" id="1588" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1589" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1590" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1591" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1592" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1593" addr="0x7f206ce54d50" >
+                <attributelist id="1594" addr="0x7f206ce54d50" >
+                    <attribute name="sym_name" value="libevdev_kernel_set_led_values" id="1595" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_kernel_set_led_values" id="1596" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,v(...))." id="1597" addr="0x7f206ce5b350" />
+                    <parmlist id="1598" addr="0x7f206ce54c10" >
+                        <parm id="1599">
+                            <attributelist id="1600" addr="0x7f206ce54c10" >
+                                <attribute name="name" value="dev" id="1601" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="1602" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1603" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1604">
+                            <attributelist id="1605" addr="0x7f206ce54cb0" >
+                                <attribute name="type" value="v(...)" id="1606" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1607" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1608" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1609" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1610" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1611" addr="0x7f206ce55170" >
+                <attributelist id="1612" addr="0x7f206ce55170" >
+                    <attribute name="sym_name" value="libevdev_set_clock_id" id="1613" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_set_clock_id" id="1614" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.struct libevdev,int)." id="1615" addr="0x7f206ce5b350" />
+                    <parmlist id="1616" addr="0x7f206ce54f90" >
+                        <parm id="1617">
+                            <attributelist id="1618" addr="0x7f206ce54f90" >
+                                <attribute name="name" value="dev" id="1619" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.struct libevdev" id="1620" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1621" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1622">
+                            <attributelist id="1623" addr="0x7f206ce550b0" >
+                                <attribute name="name" value="clockid" id="1624" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="int" id="1625" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1626" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1627" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1628" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1629" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1630" addr="0x7f206ce555d0" >
+                <attributelist id="1631" addr="0x7f206ce555d0" >
+                    <attribute name="sym_name" value="libevdev_event_is_type" id="1632" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_event_is_type" id="1633" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct input_event,unsigned int)." id="1634" addr="0x7f206ce5b350" />
+                    <parmlist id="1635" addr="0x7f206ce553d0" >
+                        <parm id="1636">
+                            <attributelist id="1637" addr="0x7f206ce553d0" >
+                                <attribute name="name" value="ev" id="1638" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct input_event" id="1639" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1640" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1641">
+                            <attributelist id="1642" addr="0x7f206ce55510" >
+                                <attribute name="name" value="type" id="1643" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1644" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1645" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1646" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1647" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1648" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1649" addr="0x7f206ce55b70" >
+                <attributelist id="1650" addr="0x7f206ce55b70" >
+                    <attribute name="sym_name" value="libevdev_event_is_code" id="1651" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_event_is_code" id="1652" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct input_event,unsigned int,unsigned int)." id="1653" addr="0x7f206ce5b350" />
+                    <parmlist id="1654" addr="0x7f206ce55830" >
+                        <parm id="1655">
+                            <attributelist id="1656" addr="0x7f206ce55830" >
+                                <attribute name="name" value="ev" id="1657" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct input_event" id="1658" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1659" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1660">
+                            <attributelist id="1661" addr="0x7f206ce55970" >
+                                <attribute name="name" value="type" id="1662" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1663" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1664">
+                            <attributelist id="1665" addr="0x7f206ce55ab0" >
+                                <attribute name="name" value="code" id="1666" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1667" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1668" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1669" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1670" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1671" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1672" addr="0x7f206ce55e70" >
+                <attributelist id="1673" addr="0x7f206ce55e70" >
+                    <attribute name="sym_name" value="libevdev_event_type_get_name" id="1674" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_event_type_get_name" id="1675" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(unsigned int).p." id="1676" addr="0x7f206ce5b350" />
+                    <parmlist id="1677" addr="0x7f206ce55df0" >
+                        <parm id="1678">
+                            <attributelist id="1679" addr="0x7f206ce55df0" >
+                                <attribute name="name" value="type" id="1680" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1681" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1682" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1683" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="q(const).char" id="1684" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1685" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1686" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1687" addr="0x7f206ce562d0" >
+                <attributelist id="1688" addr="0x7f206ce562d0" >
+                    <attribute name="sym_name" value="libevdev_event_code_get_name" id="1689" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_event_code_get_name" id="1690" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(unsigned int,unsigned int).p." id="1691" addr="0x7f206ce5b350" />
+                    <parmlist id="1692" addr="0x7f206ce56110" >
+                        <parm id="1693">
+                            <attributelist id="1694" addr="0x7f206ce56110" >
+                                <attribute name="name" value="type" id="1695" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1696" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1697" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1698">
+                            <attributelist id="1699" addr="0x7f206ce56250" >
+                                <attribute name="name" value="code" id="1700" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1701" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1702" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="q(const).char" id="1703" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1704" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1705" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1706" addr="0x7f206ce565f0" >
+                <attributelist id="1707" addr="0x7f206ce565f0" >
+                    <attribute name="sym_name" value="libevdev_property_get_name" id="1708" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_property_get_name" id="1709" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(unsigned int).p." id="1710" addr="0x7f206ce5b350" />
+                    <parmlist id="1711" addr="0x7f206ce56570" >
+                        <parm id="1712">
+                            <attributelist id="1713" addr="0x7f206ce56570" >
+                                <attribute name="name" value="prop" id="1714" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1715" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1716" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1717" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="q(const).char" id="1718" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1719" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1720" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1721" addr="0x7f206ce56910" >
+                <attributelist id="1722" addr="0x7f206ce56910" >
+                    <attribute name="sym_name" value="libevdev_event_type_get_max" id="1723" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_event_type_get_max" id="1724" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(unsigned int)." id="1725" addr="0x7f206ce5b350" />
+                    <parmlist id="1726" addr="0x7f206ce56850" >
+                        <parm id="1727">
+                            <attributelist id="1728" addr="0x7f206ce56850" >
+                                <attribute name="name" value="type" id="1729" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1730" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1731" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1732" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1733" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1734" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1735" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1736" addr="0x7f206ce56c10" >
+                <attributelist id="1737" addr="0x7f206ce56c10" >
+                    <attribute name="sym_name" value="libevdev_event_type_from_name" id="1738" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_event_type_from_name" id="1739" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).char)." id="1740" addr="0x7f206ce5b350" />
+                    <parmlist id="1741" addr="0x7f206ce56b50" >
+                        <parm id="1742">
+                            <attributelist id="1743" addr="0x7f206ce56b50" >
+                                <attribute name="name" value="name" id="1744" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).char" id="1745" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1746" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1747" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1748" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1749" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1750" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1751" addr="0x7f206ce57030" >
+                <attributelist id="1752" addr="0x7f206ce57030" >
+                    <attribute name="sym_name" value="libevdev_event_type_from_name_n" id="1753" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_event_type_from_name_n" id="1754" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).char,size_t)." id="1755" addr="0x7f206ce5b350" />
+                    <parmlist id="1756" addr="0x7f206ce56e50" >
+                        <parm id="1757">
+                            <attributelist id="1758" addr="0x7f206ce56e50" >
+                                <attribute name="name" value="name" id="1759" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).char" id="1760" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1761" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1762">
+                            <attributelist id="1763" addr="0x7f206ce56f70" >
+                                <attribute name="name" value="len" id="1764" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="size_t" id="1765" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1766" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1767" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1768" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1769" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1770" addr="0x7f206ce57470" >
+                <attributelist id="1771" addr="0x7f206ce57470" >
+                    <attribute name="sym_name" value="libevdev_event_code_from_name" id="1772" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_event_code_from_name" id="1773" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(unsigned int,p.q(const).char)." id="1774" addr="0x7f206ce5b350" />
+                    <parmlist id="1775" addr="0x7f206ce57270" >
+                        <parm id="1776">
+                            <attributelist id="1777" addr="0x7f206ce57270" >
+                                <attribute name="name" value="type" id="1778" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1779" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1780" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1781">
+                            <attributelist id="1782" addr="0x7f206ce573b0" >
+                                <attribute name="name" value="name" id="1783" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).char" id="1784" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1785" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1786" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1787" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1788" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1789" addr="0x7f206ce579d0" >
+                <attributelist id="1790" addr="0x7f206ce579d0" >
+                    <attribute name="sym_name" value="libevdev_event_code_from_name_n" id="1791" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_event_code_from_name_n" id="1792" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(unsigned int,p.q(const).char,size_t)." id="1793" addr="0x7f206ce5b350" />
+                    <parmlist id="1794" addr="0x7f206ce576b0" >
+                        <parm id="1795">
+                            <attributelist id="1796" addr="0x7f206ce576b0" >
+                                <attribute name="name" value="type" id="1797" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="unsigned int" id="1798" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1799" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1800">
+                            <attributelist id="1801" addr="0x7f206ce577f0" >
+                                <attribute name="name" value="name" id="1802" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).char" id="1803" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1804">
+                            <attributelist id="1805" addr="0x7f206ce57910" >
+                                <attribute name="name" value="len" id="1806" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="size_t" id="1807" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1808" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1809" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1810" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1811" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1812" addr="0x7f206ce57cd0" >
+                <attributelist id="1813" addr="0x7f206ce57cd0" >
+                    <attribute name="sym_name" value="libevdev_property_from_name" id="1814" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_property_from_name" id="1815" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).char)." id="1816" addr="0x7f206ce5b350" />
+                    <parmlist id="1817" addr="0x7f206ce57c10" >
+                        <parm id="1818">
+                            <attributelist id="1819" addr="0x7f206ce57c10" >
+                                <attribute name="name" value="name" id="1820" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).char" id="1821" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1822" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1823" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1824" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1825" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1826" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1827" addr="0x7f206ce580f0" >
+                <attributelist id="1828" addr="0x7f206ce580f0" >
+                    <attribute name="sym_name" value="libevdev_property_from_name_n" id="1829" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_property_from_name_n" id="1830" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).char,size_t)." id="1831" addr="0x7f206ce5b350" />
+                    <parmlist id="1832" addr="0x7f206ce57f10" >
+                        <parm id="1833">
+                            <attributelist id="1834" addr="0x7f206ce57f10" >
+                                <attribute name="name" value="name" id="1835" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).char" id="1836" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1837" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1838">
+                            <attributelist id="1839" addr="0x7f206ce58030" >
+                                <attribute name="name" value="len" id="1840" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="size_t" id="1841" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1842" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1843" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1844" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1845" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="1846" addr="0x7f206ce58650" >
+                <attributelist id="1847" addr="0x7f206ce58650" >
+                    <attribute name="sym_name" value="libevdev_get_repeat" id="1848" addr="0x7f206ce5b350" />
+                    <attribute name="name" value="libevdev_get_repeat" id="1849" addr="0x7f206ce5b350" />
+                    <attribute name="decl" value="f(p.q(const).struct libevdev,p.int,p.int)." id="1850" addr="0x7f206ce5b350" />
+                    <parmlist id="1851" addr="0x7f206ce58350" >
+                        <parm id="1852">
+                            <attributelist id="1853" addr="0x7f206ce58350" >
+                                <attribute name="name" value="dev" id="1854" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.q(const).struct libevdev" id="1855" addr="0x7f206ce5b350" />
+                                <attribute name="compactdefargs" value="1" id="1856" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1857">
+                            <attributelist id="1858" addr="0x7f206ce58470" >
+                                <attribute name="name" value="delay" id="1859" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.int" id="1860" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                        <parm id="1861">
+                            <attributelist id="1862" addr="0x7f206ce58590" >
+                                <attribute name="name" value="period" id="1863" addr="0x7f206ce5b350" />
+                                <attribute name="type" value="p.int" id="1864" addr="0x7f206ce5b350" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="1865" addr="0x7f206ce5b350" />
+                    <attribute name="type" value="int" id="1866" addr="0x7f206ce5b350" />
+                    <attribute name="sym_symtab" value="0x7f206ce2e8b0" id="1867" addr="0x7f206ce2e8b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="1868" addr="0x7f206ce5b350" />
+                </attributelist >
+             
+            </cdecl >
+        </include >
+    </include >
+</top >
