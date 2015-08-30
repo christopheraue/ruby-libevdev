@@ -1,6 +1,9 @@
 # Libevdev
 
-A 1:1 FFI wrapper around [libevdev](http://www.freedesktop.org/software/libevdev/doc/latest/).
+1:1 FFI ruby bindings for [libevdev](http://www.freedesktop.org/software/libevdev/doc/latest/).
+
+For a nice object wrapper around the raw bindings abstracting away the FFI stuff
+have a look at the [evdev](http://github.com/christopheraue/ruby-evdev) gem.
 
 ## Installation
 
