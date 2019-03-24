@@ -26,7 +26,7 @@
   READ_STATUS_SUCCESS = 0
   READ_STATUS_SYNC = 1
 
-  attach_function :libevdev_next_event, [ :pointer, :uint, :pointer ], :int
+  attach_function :libevdev_next_event, [ :pointer, :uint, :pointer ], :int, :blocking => true
   attach_function :libevdev_has_event_pending, [ :pointer ], :int
   attach_function :libevdev_get_name, [ :pointer ], :string
   attach_function :libevdev_set_name, [ :pointer, :string ], :void
