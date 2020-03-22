@@ -1,4 +1,5 @@
 require 'bundler/setup'
+require 'ffi'
 require 'linux_input'
 
 require "libevdev/version"

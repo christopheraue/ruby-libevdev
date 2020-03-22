@@ -18,6 +18,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "linux_input", "~> 1.0"
+  spec.add_runtime_dependency "ffi", "~> 1.9"
   spec.add_runtime_dependency "bundler", "~> 1.8"
   spec.add_development_dependency "rake", "~> 13.0"
+  spec.add_development_dependency "ffi-swig-generator", '~> 0'
 end
