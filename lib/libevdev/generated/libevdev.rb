@@ -26,7 +26,7 @@
   READ_STATUS_SUCCESS = 0
   READ_STATUS_SYNC = 1
 
-  attach_function :libevdev_next_event, [ :pointer, :uint, :pointer ], :int, :blocking => true
+  attach_function :libevdev_next_event, [ :pointer, :uint, :pointer ], :int
   attach_function :libevdev_has_event_pending, [ :pointer ], :int
   attach_function :libevdev_get_name, [ :pointer ], :string
   attach_function :libevdev_set_name, [ :pointer, :string ], :void
@@ -82,12 +82,19 @@
   attach_function :libevdev_event_is_code, [ :pointer, :uint, :uint ], :int
   attach_function :libevdev_event_type_get_name, [ :uint ], :string
   attach_function :libevdev_event_code_get_name, [ :uint, :uint ], :string
+  attach_function :libevdev_event_value_get_name, [ :uint, :uint, :int ], :string
   attach_function :libevdev_property_get_name, [ :uint ], :string
   attach_function :libevdev_event_type_get_max, [ :uint ], :int
   attach_function :libevdev_event_type_from_name, [ :string ], :int
   attach_function :libevdev_event_type_from_name_n, [ :string, :uint ], :int
   attach_function :libevdev_event_code_from_name, [ :uint, :string ], :int
   attach_function :libevdev_event_code_from_name_n, [ :uint, :string, :uint ], :int
+  attach_function :libevdev_event_value_from_name, [ :uint, :uint, :string ], :int
+  attach_function :libevdev_event_type_from_code_name, [ :string ], :int
+  attach_function :libevdev_event_type_from_code_name_n, [ :string, :uint ], :int
+  attach_function :libevdev_event_code_from_code_name, [ :string ], :int
+  attach_function :libevdev_event_code_from_code_name_n, [ :string, :uint ], :int
+  attach_function :libevdev_event_value_from_name_n, [ :uint, :uint, :string, :uint ], :int
   attach_function :libevdev_property_from_name, [ :string ], :int
   attach_function :libevdev_property_from_name_n, [ :string, :uint ], :int
   attach_function :libevdev_get_repeat, [ :pointer, :pointer, :pointer ], :int
