@@ -3,14 +3,10 @@ namespace :ffi do
   task :generate do
     `swig -xml -o libevdev_wrap.xml -I/usr/include swig/libevdev.i`
 
-    `ffi-gen libevdev_wrap.xml lib/libevdev/generated/libevdev.rb`
+    `ffi-gen libevdev_wrap.xml libevdev.rb`
 
-    # simpler method and constant naming
-    `sed -i 's/LIBEVDEV_//g' lib/libevdev/generated/libevdev.rb`
+    `cat libevdev.rb | sed -e 's/LIBEVDEV_//g' | sed -e 's/va_list/:pointer/g' > lib/libevdev/generated/libevdev.rb`
 
-    # manual adjustments
-    `sed -i 's/va_list/:pointer/g' lib/libevdev/generated/libevdev.rb`
-
-    `rm -f libevdev_wrap.xml`
+    `rm -f libevdev_wrap.xml libevdev.rb`
   end
 end
